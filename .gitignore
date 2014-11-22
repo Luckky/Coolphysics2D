@@ -1,2 +1,6 @@
 *.o
 *.xcodeproj
+*.ipa
+*.swp
+*.lock
+.DS_Store
