@@ -17,7 +17,7 @@
 @implementation ViewController
 {
     GameView* gameView;
-    float updateInterval;
+    double updateInterval;
 }
 
 

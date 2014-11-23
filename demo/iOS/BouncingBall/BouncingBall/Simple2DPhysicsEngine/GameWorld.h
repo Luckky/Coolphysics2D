@@ -7,32 +7,32 @@
 
 typedef struct tagFrame
 {
-	float left;
-	float top;
-	float right;
-	float bottom;
+	double left;
+	double top;
+	double right;
+	double bottom;
 }Frame;
 
 class GameWorld
 {
 public:
-	//Constructors
-	GameWorld(Frame frame,Vector gravity,float damping);
+	//Constructor
+	GameWorld(Frame frame,Vector gravity,double damping);
     //Destructor
     ~GameWorld();
 
-	//Accessors
+	//Accessor
 	const Frame& frame()const;
 
 	void addEntity(Entity* entity);
 
-	void update(float timeInterval);
+	void update(double timeInterval);
 
 private:
 	void bounce(Entity* entity)const;
 	Frame _frame;
 	Vector _gravity;
-	float _damping;
+	double _damping;
 	std::vector<Entity*> _entities;
 };
 

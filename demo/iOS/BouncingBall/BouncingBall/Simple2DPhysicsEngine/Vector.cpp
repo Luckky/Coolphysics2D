@@ -3,7 +3,7 @@
 
 Vector::Vector():_x(0),_y(0){}
 
-Vector::Vector(float px,float py):_x(px),_y(py){}
+Vector::Vector(double px,double py):_x(px),_y(py){}
 
 Vector::Vector(const Vector& v):_x(v._x),_y(v._y){}
 
@@ -21,29 +21,29 @@ Vector::Vector(const Vector& v1,const Vector& v2)
 	_y=v2._y-v1._y;
 }
 
-float Vector::x()const
+double Vector::x()const
 {
     return _x;
 }
-float Vector::y()const
+double Vector::y()const
 {
     return _y;
 }
 
-float Vector::modulus()const
+double Vector::modulus()const
 {
 	return sqrt(_x*_x+_y*_y);
 }
 
 Vector Vector::unitVector()const
 {
-	float mod=modulus();
+	double mod=modulus();
 	return Vector(_x/mod,_y/mod);
 }
 
-float Vector::radian()const
+double Vector::radian()const
 {
-	float mod=modulus();
+	double mod=modulus();
     if(_y>=0)
     {
         return acos(_x/mod);
@@ -54,19 +54,19 @@ float Vector::radian()const
     }
 }
 
-float Vector::dotProductWith(const Vector& v)const
+double Vector::dotProductWith(const Vector& v)const
 {
 	return _x*v._x+_y*v._y;
 }
 
-float Vector::crossProductWith(const Vector& v)const
+double Vector::crossProductWith(const Vector& v)const
 {
 	return _x*v._y-_y*v._x;
 }
 
 
 
-float Vector::radianWith(const Vector &v)const
+double Vector::radianWith(const Vector &v)const
 {
     double result=acos(dotProductWith(v)/modulus()*v.modulus());
     if (this->crossProductWith(v)<0)
@@ -80,11 +80,15 @@ Vector Vector::operator+(const Vector& v)const
 {
 	return Vector(_x+v._x,_y+v._y);
 }
-Vector Vector::operator*(float number)const
+Vector Vector::operator-(const Vector& v)const
+{
+    return Vector(_x-v._x,_y-v._y);
+}
+Vector Vector::operator*(double number)const
 {
 	return Vector(_x*number,_y*number);
 }
-Vector Vector::operator/(float number)const
+Vector Vector::operator/(double number)const
 {
 	return Vector(_x/number,_y/number);
 }
@@ -100,12 +104,18 @@ void Vector::symmetrizeAbout(const Vector& axis)
 	rotateBy(radian*2);
 }
 
-void Vector::rotateBy(float rad)
+void Vector::rotateBy(double rad)
 {
-	float r=radian();
+	double r=radian();
 	r+=rad;
 	_x=modulus()*cos(r);
 	_y=modulus()*sin(r);
+}
+
+double Vector::componentAlongAxis(const Vector &dir)const
+{
+    Vector u=dir.unitVector();
+    return u.dotProductWith(*this);
 }
 
 string Vector::description()const

@@ -10,15 +10,13 @@
 
 @implementation Ball
 {
-    float _radius;
     UIColor* _color;
     Entity* _entity;
 }
 
--(id)initWithRadius:(float)radius color:(UIColor*)color entity:(Entity *)entity
+-(id)initWithEntity:(Entity *)entity color:(UIColor*)color
 {
     if (self=[super init]) {
-        _radius=radius;
         _color=color;
         _entity=entity;
     }
@@ -32,7 +30,7 @@
     
     CGContextMoveToPoint(context, thePoint.x, thePoint.y);
     CGContextSetFillColor(context, CGColorGetComponents(_color.CGColor));
-    CGContextAddArc(context, thePoint.x, thePoint.y, _radius,  0, 2*M_PI, 0);
+    CGContextAddArc(context, thePoint.x, thePoint.y, _entity->radius(),  0, 2*M_PI, 0);
     CGContextFillPath(context);
 }
 

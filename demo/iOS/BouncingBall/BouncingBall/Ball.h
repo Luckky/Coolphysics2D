@@ -11,7 +11,7 @@
 
 @interface Ball : UIView
 
--(id)initWithRadius:(float)radius color:(UIColor*)color entity:(Entity*)entity;
+-(id)initWithEntity:(Entity*)entity color:(UIColor*)color ;
 
 -(void)drawInContext:(CGContextRef)context;
 
