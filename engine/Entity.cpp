@@ -30,7 +30,7 @@ bool Entity::collideWith(const Entity& e)const
         Vector collisionAxis=e.position()-this->position();
         double v1=this->velocity().componentAlongAxis(collisionAxis);
         double v2=e.velocity().componentAlongAxis(collisionAxis);
-        if ((v1-v2)*v1>0) {
+        if ((v1-v2)>0) {
             return true;
         }
     }

@@ -41,6 +41,7 @@
         _entity2=new Entity(40,0.8,Vector(200,300),Vector(500,0),Vector(0,0),0.99);
         _ball2=[[Ball alloc] initWithEntity:_entity2 color:[UIColor colorWithRed:0 green:1 blue:0 alpha:1]];
         
+        
         self.gameWorld->addEntity(_entity0);
         self.gameWorld->addEntity(_entity1);
         self.gameWorld->addEntity(_entity2);
