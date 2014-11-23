@@ -17,7 +17,7 @@ void Entity::reflectAbout(const Vector& axis)
     _velocity.symmetrizeAbout(axis);
     Vector n=axis.rotate(M_PI/2);
     double nComp=_velocity.componentAlongAxis(n);
-    _velocity+=n*nComp*(_elasticity-1);
+    _velocity+=n*nComp*(_elasticity*_elasticity-1);
 }
 
 double Entity::distanceTo(const Entity &e)const
