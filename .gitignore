@@ -2,7 +2,7 @@
 *.ipa
 *.swp
 *.lock
-.DS_Store
 *.xccheckout
 *.xcuserstate
 *.xcbkptlist
+.DS_Store

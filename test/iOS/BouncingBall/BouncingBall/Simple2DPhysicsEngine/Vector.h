@@ -38,6 +38,7 @@ public:
 	double dotProductWith(const Vector& v)const;
 	double crossProductWith(const Vector& v)const;
     double radianWith(const Vector& v)const;
+    Vector rotate(double radian)const;
 
     //Transformation
     void symmetrizeAbout(const Vector& axis);

@@ -32,7 +32,7 @@ double Vector::y()const
 
 double Vector::modulus()const
 {
-	return sqrt(_x*_x+_y*_y);
+    return sqrt(_x*_x+_y*_y);
 }
 
 Vector Vector::unitVector()const
@@ -76,6 +76,13 @@ double Vector::radianWith(const Vector &v)const
     return result;
 }
 
+Vector Vector::rotate(double radian)const
+{
+    Vector v=*this;
+    v.rotateBy(radian);
+    return v;
+}
+
 Vector Vector::operator+(const Vector& v)const
 {
 	return Vector(_x+v._x,_y+v._y);
@@ -108,8 +115,9 @@ void Vector::rotateBy(double rad)
 {
 	double r=radian();
 	r+=rad;
-	_x=modulus()*cos(r);
-	_y=modulus()*sin(r);
+    double mod=modulus();
+	_x=mod*cos(r);
+	_y=mod*sin(r);
 }
 
 double Vector::componentAlongAxis(const Vector &dir)const

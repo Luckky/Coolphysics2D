@@ -22,8 +22,8 @@ void GameWorld::update(double timeInterval)
 {
     for (int i=0; i<_entities.size(); i++) {
         Entity* ei=_entities[i];
-        ei->update(timeInterval,_gravity,_damping);
         bounce(ei);
+        ei->update(timeInterval,_gravity,_damping);
         for (int j=i+1; j<_entities.size(); j++) {
             Entity* ej=_entities[j];
             if (_entities[i]->collideWith(*_entities[j])) {

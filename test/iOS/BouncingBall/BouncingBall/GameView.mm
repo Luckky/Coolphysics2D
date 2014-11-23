@@ -30,15 +30,15 @@
         gameWorldFrame.top=0;
         gameWorldFrame.right=self.frame.size.width;
         gameWorldFrame.bottom=self.frame.size.height;
-        self.gameWorld=new GameWorld(gameWorldFrame,Vector(0, 1000),-0.01);
+        self.gameWorld=new GameWorld(gameWorldFrame,Vector(0, 1000),-0.1);
         
-        _entity0=new Entity(50,1,Vector(0,0),Vector(500,0),Vector(0,0),0.99);
+        _entity0=new Entity(50,1,Vector(0,0),Vector(500,0),Vector(0,0),0.7);
         _ball0=[[Ball alloc] initWithEntity:_entity0 color:[UIColor colorWithRed:0 green:0 blue:1 alpha:1]];
         
-        _entity1=new Entity(30,0.5,Vector(300,100),Vector(-400,0),Vector(0,0),0.99);
+        _entity1=new Entity(30,0.5,Vector(300,100),Vector(-400,0),Vector(0,0),0.7);
         _ball1=[[Ball alloc] initWithEntity:_entity1 color:[UIColor colorWithRed:1 green:0 blue:0 alpha:1 ]];
         
-        _entity2=new Entity(40,0.8,Vector(200,300),Vector(500,0),Vector(0,0),0.99);
+        _entity2=new Entity(40,0.8,Vector(200,300),Vector(500,0),Vector(0,0),0.7);
         _ball2=[[Ball alloc] initWithEntity:_entity2 color:[UIColor colorWithRed:0 green:1 blue:0 alpha:1]];
         
         
