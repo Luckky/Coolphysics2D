@@ -14,7 +14,7 @@
 		<string>https://github.com/Luckky/Coolphysics2D.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>demo/iOS/BouncingBall/BouncingBall.xcodeproj</string>
+	<string>test/iOS/BouncingBall/BouncingBall.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8CCFE5B1F07E0808E545F422489E78D74BBE4D57</key>

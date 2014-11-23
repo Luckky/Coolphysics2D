@@ -3,3 +3,6 @@
 *.swp
 *.lock
 .DS_Store
+*.xccheckout
+*.xcuserstate
+*.xcbkptlist
