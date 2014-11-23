@@ -13,6 +13,8 @@ void Entity::update(double timeInterval,const Vector& gravity,double damping)
 void Entity::reflectAbout(const Vector& axis)
 {
 	_velocity.symmetrizeAbout(axis);
+    double comp=_velocity.componentAlongAxis(axis);
+    _velocity+=axis*comp*(_elasticity-1);
 }
 
 double Entity::distanceTo(const Entity &e)const
