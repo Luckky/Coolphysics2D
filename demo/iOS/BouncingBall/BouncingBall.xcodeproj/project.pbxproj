@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A982DECC1A1F93310095341A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A982DECB1A1F93310095341A /* main.m */; };
+		A982DECF1A1F93310095341A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A982DECE1A1F93310095341A /* AppDelegate.m */; };
+		A982DED21A1F93310095341A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A982DED11A1F93310095341A /* ViewController.mm */; };
+		A982DED51A1F93310095341A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A982DED31A1F93310095341A /* Main.storyboard */; };
+		A982DED71A1F93310095341A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A982DED61A1F93310095341A /* Images.xcassets */; };
+		A982DEDA1A1F93310095341A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A982DED81A1F93310095341A /* LaunchScreen.xib */; };
+		A982DEE61A1F93310095341A /* BouncingBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A982DEE51A1F93310095341A /* BouncingBallTests.m */; };
+		A982DF001A1FDB2E0095341A /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A982DEFA1A1FDB2E0095341A /* Entity.cpp */; };
+		A982DF011A1FDB2E0095341A /* GameWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A982DEFC1A1FDB2E0095341A /* GameWorld.cpp */; };
+		A982DF021A1FDB2E0095341A /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A982DEFE1A1FDB2E0095341A /* Vector.cpp */; };
+		A982DF051A1FDB650095341A /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A982DF041A1FDB650095341A /* GameView.mm */; };
+		A982DF081A1FE63B0095341A /* Ball.mm in Sources */ = {isa = PBXBuildFile; fileRef = A982DF071A1FE63B0095341A /* Ball.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A982DEE01A1F93310095341A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A982DEBE1A1F93310095341A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A982DEC51A1F93310095341A;
+			remoteInfo = BouncingBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A982DEC61A1F93310095341A /* BouncingBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BouncingBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A982DECA1A1F93310095341A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A982DECB1A1F93310095341A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A982DECD1A1F93310095341A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A982DECE1A1F93310095341A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A982DED01A1F93310095341A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A982DED11A1F93310095341A /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		A982DED41A1F93310095341A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A982DED61A1F93310095341A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A982DED91A1F93310095341A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A982DEDF1A1F93310095341A /* BouncingBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncingBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A982DEE41A1F93310095341A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A982DEE51A1F93310095341A /* BouncingBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncingBallTests.m; sourceTree = "<group>"; };
+		A982DEFA1A1FDB2E0095341A /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		A982DEFB1A1FDB2E0095341A /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		A982DEFC1A1FDB2E0095341A /* GameWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWorld.cpp; sourceTree = "<group>"; };
+		A982DEFD1A1FDB2E0095341A /* GameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWorld.h; sourceTree = "<group>"; };
+		A982DEFE1A1FDB2E0095341A /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
+		A982DEFF1A1FDB2E0095341A /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		A982DF031A1FDB650095341A /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		A982DF041A1FDB650095341A /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
+		A982DF061A1FE63B0095341A /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ball.h; path = BouncingBall/Ball.h; sourceTree = SOURCE_ROOT; };
+		A982DF071A1FE63B0095341A /* Ball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Ball.mm; path = BouncingBall/Ball.mm; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A982DEC31A1F93310095341A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A982DEDC1A1F93310095341A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A982DEBD1A1F93310095341A = {
+			isa = PBXGroup;
+			children = (
+				A982DEC81A1F93310095341A /* BouncingBall */,
+				A982DEE21A1F93310095341A /* BouncingBallTests */,
+				A982DEC71A1F93310095341A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A982DEC71A1F93310095341A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A982DEC61A1F93310095341A /* BouncingBall.app */,
+				A982DEDF1A1F93310095341A /* BouncingBallTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A982DEC81A1F93310095341A /* BouncingBall */ = {
+			isa = PBXGroup;
+			children = (
+				A982DECD1A1F93310095341A /* AppDelegate.h */,
+				A982DECE1A1F93310095341A /* AppDelegate.m */,
+				A982DED01A1F93310095341A /* ViewController.h */,
+				A982DED11A1F93310095341A /* ViewController.mm */,
+				A982DF061A1FE63B0095341A /* Ball.h */,
+				A982DF071A1FE63B0095341A /* Ball.mm */,
+				A982DF031A1FDB650095341A /* GameView.h */,
+				A982DF041A1FDB650095341A /* GameView.mm */,
+				A982DEF91A1FDB2E0095341A /* Simple2DPhysicsEngine */,
+				A982DED31A1F93310095341A /* Main.storyboard */,
+				A982DED61A1F93310095341A /* Images.xcassets */,
+				A982DED81A1F93310095341A /* LaunchScreen.xib */,
+				A982DEC91A1F93310095341A /* Supporting Files */,
+			);
+			path = BouncingBall;
+			sourceTree = "<group>";
+		};
+		A982DEC91A1F93310095341A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A982DECA1A1F93310095341A /* Info.plist */,
+				A982DECB1A1F93310095341A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A982DEE21A1F93310095341A /* BouncingBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				A982DEE51A1F93310095341A /* BouncingBallTests.m */,
+				A982DEE31A1F93310095341A /* Supporting Files */,
+			);
+			path = BouncingBallTests;
+			sourceTree = "<group>";
+		};
+		A982DEE31A1F93310095341A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A982DEE41A1F93310095341A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A982DEF91A1FDB2E0095341A /* Simple2DPhysicsEngine */ = {
+			isa = PBXGroup;
+			children = (
+				A982DEFA1A1FDB2E0095341A /* Entity.cpp */,
+				A982DEFB1A1FDB2E0095341A /* Entity.h */,
+				A982DEFC1A1FDB2E0095341A /* GameWorld.cpp */,
+				A982DEFD1A1FDB2E0095341A /* GameWorld.h */,
+				A982DEFE1A1FDB2E0095341A /* Vector.cpp */,
+				A982DEFF1A1FDB2E0095341A /* Vector.h */,
+			);
+			path = Simple2DPhysicsEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A982DEC51A1F93310095341A /* BouncingBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A982DEE91A1F93310095341A /* Build configuration list for PBXNativeTarget "BouncingBall" */;
+			buildPhases = (
+				A982DEC21A1F93310095341A /* Sources */,
+				A982DEC31A1F93310095341A /* Frameworks */,
+				A982DEC41A1F93310095341A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BouncingBall;
+			productName = BouncingBall;
+			productReference = A982DEC61A1F93310095341A /* BouncingBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A982DEDE1A1F93310095341A /* BouncingBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A982DEEC1A1F93310095341A /* Build configuration list for PBXNativeTarget "BouncingBallTests" */;
+			buildPhases = (
+				A982DEDB1A1F93310095341A /* Sources */,
+				A982DEDC1A1F93310095341A /* Frameworks */,
+				A982DEDD1A1F93310095341A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A982DEE11A1F93310095341A /* PBXTargetDependency */,
+			);
+			name = BouncingBallTests;
+			productName = BouncingBallTests;
+			productReference = A982DEDF1A1F93310095341A /* BouncingBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A982DEBE1A1F93310095341A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = JIRENTIANXIANG;
+				TargetAttributes = {
+					A982DEC51A1F93310095341A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					A982DEDE1A1F93310095341A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = A982DEC51A1F93310095341A;
+					};
+				};
+			};
+			buildConfigurationList = A982DEC11A1F93310095341A /* Build configuration list for PBXProject "BouncingBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A982DEBD1A1F93310095341A;
+			productRefGroup = A982DEC71A1F93310095341A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A982DEC51A1F93310095341A /* BouncingBall */,
+				A982DEDE1A1F93310095341A /* BouncingBallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A982DEC41A1F93310095341A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A982DED51A1F93310095341A /* Main.storyboard in Resources */,
+				A982DEDA1A1F93310095341A /* LaunchScreen.xib in Resources */,
+				A982DED71A1F93310095341A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A982DEDD1A1F93310095341A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A982DEC21A1F93310095341A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A982DF001A1FDB2E0095341A /* Entity.cpp in Sources */,
+				A982DED21A1F93310095341A /* ViewController.mm in Sources */,
+				A982DF021A1FDB2E0095341A /* Vector.cpp in Sources */,
+				A982DF011A1FDB2E0095341A /* GameWorld.cpp in Sources */,
+				A982DF081A1FE63B0095341A /* Ball.mm in Sources */,
+				A982DECF1A1F93310095341A /* AppDelegate.m in Sources */,
+				A982DECC1A1F93310095341A /* main.m in Sources */,
+				A982DF051A1FDB650095341A /* GameView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A982DEDB1A1F93310095341A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A982DEE61A1F93310095341A /* BouncingBallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A982DEE11A1F93310095341A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A982DEC51A1F93310095341A /* BouncingBall */;
+			targetProxy = A982DEE01A1F93310095341A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A982DED31A1F93310095341A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A982DED41A1F93310095341A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A982DED81A1F93310095341A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A982DED91A1F93310095341A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A982DEE71A1F93310095341A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A982DEE81A1F93310095341A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A982DEEA1A1F93310095341A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BouncingBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A982DEEB1A1F93310095341A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BouncingBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A982DEED1A1F93310095341A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BouncingBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BouncingBall.app/BouncingBall";
+			};
+			name = Debug;
+		};
+		A982DEEE1A1F93310095341A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BouncingBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BouncingBall.app/BouncingBall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A982DEC11A1F93310095341A /* Build configuration list for PBXProject "BouncingBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A982DEE71A1F93310095341A /* Debug */,
+				A982DEE81A1F93310095341A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A982DEE91A1F93310095341A /* Build configuration list for PBXNativeTarget "BouncingBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A982DEEA1A1F93310095341A /* Debug */,
+				A982DEEB1A1F93310095341A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A982DEEC1A1F93310095341A /* Build configuration list for PBXNativeTarget "BouncingBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A982DEED1A1F93310095341A /* Debug */,
+				A982DEEE1A1F93310095341A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A982DEBE1A1F93310095341A /* Project object */;
+}

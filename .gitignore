@@ -1,5 +1,4 @@
 *.o
-*.xcodeproj
 *.ipa
 *.swp
 *.lock
