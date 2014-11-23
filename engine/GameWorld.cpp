@@ -1,6 +1,6 @@
 #include "GameWorld.h"
 
-GameWorld::GameWorld(Frame frame,Vector gravity,float damping):_frame(frame),_gravity(gravity),_damping(damping){}
+GameWorld::GameWorld(Frame frame,Vector gravity,double damping):_frame(frame),_gravity(gravity),_damping(damping){}
 GameWorld::~GameWorld()
 {
     for (int i=0; i<_entities.size(); i++) {
@@ -13,33 +13,36 @@ const Frame& GameWorld::frame()const
 	return _frame;
 }
 
-void GameWorld::addEntity(Entity* entity) 
+void GameWorld::addEntity(Entity* entity)
 {
 	_entities.push_back(entity);
 }
 
-void GameWorld::update(float timeInterval)
+void GameWorld::update(double timeInterval)
 {
-//	for(std::vector<Entity>::iterator it=_entities.begin();it!=_entities.end();it++)
-//	{
-//		it->update(timeInterval);
-//		//bounce(*it);
-//	}
     for (int i=0; i<_entities.size(); i++) {
-        _entities[i]->update(timeInterval,_gravity,_damping);
-        bounce(_entities[i]);
+        Entity* ei=_entities[i];
+        ei->update(timeInterval,_gravity,_damping);
+        bounce(ei);
+        for (int j=i+1; j<_entities.size(); j++) {
+            Entity* ej=_entities[j];
+            if (_entities[i]->collideWith(*_entities[j])) {
+                Entity::handleCollision(*ei,*ej);
+            }
+        }
     }
 }
 
 void GameWorld::bounce(Entity* entity)const
 {
-	float x=entity->position().x();
-	float y=entity->position().y();
-    float vx=entity->velocity().x();
-    float vy=entity->velocity().y();
-	if ((x>_frame.right&&vx>0)||(x<_frame.left&&vx<0)){
+	double x=entity->position().x();
+	double y=entity->position().y();
+    double vx=entity->velocity().x();
+    double vy=entity->velocity().y();
+    double r=entity->radius();
+	if ((x+r>_frame.right&&vx>0)||(x-r<_frame.left&&vx<0)){
 		entity->reflectAbout(Vector(0,1));
-	}else if((y<_frame.top&&vy<0)||(y>_frame.bottom&&vy>0)){
+	}else if((y-r<_frame.top&&vy<0)||(y+r>_frame.bottom&&vy>0)){
 		entity->reflectAbout(Vector(1,0));
 	}
 }

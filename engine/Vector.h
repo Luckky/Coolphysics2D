@@ -10,40 +10,46 @@ using namespace std;
 class Vector
 {
 public:
+    //Debugging
+    string description()const;
+    
 	//Constructors
 	Vector();
-	Vector(float x,float y);
+	Vector(double x,double y);
 	Vector(const Vector& v);
 	const Vector& operator =(const Vector& v);
 	Vector(const Vector& v1,const Vector& v2);
     
     //Data memeber accessors
-    float x()const;
-    float y()const;
+    double x()const;
+    double y()const;
 
     //Properties
 	Vector unitVector()const;
-	float modulus()const;
-	float radian()const;
+	double modulus()const;
+	double radian()const;
 
 	//Arithmetics
 	Vector operator+(const Vector& v)const;
-	Vector operator*(float number)const;
-	Vector operator/(float number)const;
+    Vector operator-(const Vector& v)const;
+	Vector operator*(double number)const;
+	Vector operator/(double number)const;
 	void operator+=(const Vector& v);
-	float dotProductWith(const Vector& v)const;
-	float crossProductWith(const Vector& v)const;
-    float radianWith(const Vector& v)const;
+	double dotProductWith(const Vector& v)const;
+	double crossProductWith(const Vector& v)const;
+    double radianWith(const Vector& v)const;
 
     //Transformation
     void symmetrizeAbout(const Vector& axis);
-    void rotateBy(float radian);
+    void rotateBy(double radian);
     
-	string description()const;
+    //Relation
+    double componentAlongAxis(const Vector& dir)const;
+    
 
 private:
-	float _x;
-	float _y;
+	double _x;
+	double _y;
 };
 
 #endif
