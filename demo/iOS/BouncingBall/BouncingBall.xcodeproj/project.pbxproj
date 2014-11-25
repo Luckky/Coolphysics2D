@@ -7,24 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A914838B1A22F6C200965CE2 /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A91483891A22F6C200965CE2 /* Field.cpp */; };
-		A914838E1A22F8A300965CE2 /* BuoyancyField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A914838C1A22F8A300965CE2 /* BuoyancyField.cpp */; };
-		A91483911A22F96D00965CE2 /* GravityField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A914838F1A22F96D00965CE2 /* GravityField.cpp */; };
-		A91483941A22FA2D00965CE2 /* DampingField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A91483921A22FA2D00965CE2 /* DampingField.cpp */; };
-		A982DECC1A1F93310095341A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A982DECB1A1F93310095341A /* main.m */; };
-		A982DECF1A1F93310095341A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A982DECE1A1F93310095341A /* AppDelegate.m */; };
-		A982DED21A1F93310095341A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A982DED11A1F93310095341A /* ViewController.mm */; };
-		A982DED51A1F93310095341A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A982DED31A1F93310095341A /* Main.storyboard */; };
-		A982DED71A1F93310095341A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A982DED61A1F93310095341A /* Images.xcassets */; };
-		A982DEDA1A1F93310095341A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A982DED81A1F93310095341A /* LaunchScreen.xib */; };
 		A982DEE61A1F93310095341A /* BouncingBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A982DEE51A1F93310095341A /* BouncingBallTests.m */; };
-		A982DF001A1FDB2E0095341A /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A982DEFA1A1FDB2E0095341A /* Particle.cpp */; };
-		A982DF011A1FDB2E0095341A /* GameWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A982DEFC1A1FDB2E0095341A /* GameWorld.cpp */; };
-		A982DF021A1FDB2E0095341A /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A982DEFE1A1FDB2E0095341A /* Vector.cpp */; };
-		A982DF051A1FDB650095341A /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A982DF041A1FDB650095341A /* GameView.mm */; };
-		A982DF081A1FE63B0095341A /* Ball.mm in Sources */ = {isa = PBXBuildFile; fileRef = A982DF071A1FE63B0095341A /* Ball.mm */; };
-		A9F261691A2470D300FEB228 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9F261671A2470D300FEB228 /* Rectangle.cpp */; };
-		A9F2616C1A24791F00FEB228 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9F2616A1A24791F00FEB228 /* Circle.cpp */; };
+		A9892F991A24DAF200B65142 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9892F771A24DAF200B65142 /* AppDelegate.m */; };
+		A9892F9A1A24DAF200B65142 /* Ball.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9892F791A24DAF200B65142 /* Ball.mm */; };
+		A9892F9B1A24DAF200B65142 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9892F7A1A24DAF200B65142 /* LaunchScreen.xib */; };
+		A9892F9C1A24DAF200B65142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9892F7C1A24DAF200B65142 /* Main.storyboard */; };
+		A9892F9D1A24DAF200B65142 /* BuoyancyField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9892F7F1A24DAF200B65142 /* BuoyancyField.cpp */; };
+		A9892F9E1A24DAF200B65142 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9892F811A24DAF200B65142 /* Circle.cpp */; };
+		A9892F9F1A24DAF200B65142 /* DampingField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9892F831A24DAF200B65142 /* DampingField.cpp */; };
+		A9892FA01A24DAF200B65142 /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9892F851A24DAF200B65142 /* Field.cpp */; };
+		A9892FA11A24DAF200B65142 /* GameWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9892F871A24DAF200B65142 /* GameWorld.cpp */; };
+		A9892FA21A24DAF200B65142 /* GravityField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9892F891A24DAF200B65142 /* GravityField.cpp */; };
+		A9892FA41A24DAF200B65142 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9892F8C1A24DAF200B65142 /* Particle.cpp */; };
+		A9892FA51A24DAF200B65142 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9892F8E1A24DAF200B65142 /* Rectangle.cpp */; };
+		A9892FA61A24DAF200B65142 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9892F901A24DAF200B65142 /* Vector.cpp */; };
+		A9892FA71A24DAF200B65142 /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9892F931A24DAF200B65142 /* GameView.mm */; };
+		A9892FA81A24DAF200B65142 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9892F941A24DAF200B65142 /* Images.xcassets */; };
+		A9892FA91A24DAF200B65142 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9892F951A24DAF200B65142 /* Info.plist */; };
+		A9892FAA1A24DAF200B65142 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9892F961A24DAF200B65142 /* main.m */; };
+		A9892FAB1A24DAF200B65142 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9892F981A24DAF200B65142 /* ViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,41 +39,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A91483891A22F6C200965CE2 /* Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Field.cpp; sourceTree = "<group>"; };
-		A914838A1A22F6C200965CE2 /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
-		A914838C1A22F8A300965CE2 /* BuoyancyField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuoyancyField.cpp; sourceTree = "<group>"; };
-		A914838D1A22F8A300965CE2 /* BuoyancyField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuoyancyField.h; sourceTree = "<group>"; };
-		A914838F1A22F96D00965CE2 /* GravityField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GravityField.cpp; sourceTree = "<group>"; };
-		A91483901A22F96D00965CE2 /* GravityField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityField.h; sourceTree = "<group>"; };
-		A91483921A22FA2D00965CE2 /* DampingField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DampingField.cpp; sourceTree = "<group>"; };
-		A91483931A22FA2D00965CE2 /* DampingField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DampingField.h; sourceTree = "<group>"; };
 		A982DEC61A1F93310095341A /* BouncingBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BouncingBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A982DECA1A1F93310095341A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A982DECB1A1F93310095341A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A982DECD1A1F93310095341A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A982DECE1A1F93310095341A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A982DED01A1F93310095341A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A982DED11A1F93310095341A /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
-		A982DED41A1F93310095341A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A982DED61A1F93310095341A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A982DED91A1F93310095341A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A982DEDF1A1F93310095341A /* BouncingBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncingBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A982DEE41A1F93310095341A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A982DEE51A1F93310095341A /* BouncingBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncingBallTests.m; sourceTree = "<group>"; };
-		A982DEFA1A1FDB2E0095341A /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
-		A982DEFB1A1FDB2E0095341A /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
-		A982DEFC1A1FDB2E0095341A /* GameWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWorld.cpp; sourceTree = "<group>"; };
-		A982DEFD1A1FDB2E0095341A /* GameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWorld.h; sourceTree = "<group>"; };
-		A982DEFE1A1FDB2E0095341A /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
-		A982DEFF1A1FDB2E0095341A /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
-		A982DF031A1FDB650095341A /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
-		A982DF041A1FDB650095341A /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
-		A982DF061A1FE63B0095341A /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ball.h; path = BouncingBall/Ball.h; sourceTree = SOURCE_ROOT; };
-		A982DF071A1FE63B0095341A /* Ball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Ball.mm; path = BouncingBall/Ball.mm; sourceTree = SOURCE_ROOT; };
-		A9F261671A2470D300FEB228 /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
-		A9F261681A2470D300FEB228 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
-		A9F2616A1A24791F00FEB228 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
-		A9F2616B1A24791F00FEB228 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		A9892F761A24DAF200B65142 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9892F771A24DAF200B65142 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9892F781A24DAF200B65142 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		A9892F791A24DAF200B65142 /* Ball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Ball.mm; sourceTree = "<group>"; };
+		A9892F7B1A24DAF200B65142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A9892F7D1A24DAF200B65142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9892F7F1A24DAF200B65142 /* BuoyancyField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuoyancyField.cpp; sourceTree = "<group>"; };
+		A9892F801A24DAF200B65142 /* BuoyancyField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuoyancyField.h; sourceTree = "<group>"; };
+		A9892F811A24DAF200B65142 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		A9892F821A24DAF200B65142 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		A9892F831A24DAF200B65142 /* DampingField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DampingField.cpp; sourceTree = "<group>"; };
+		A9892F841A24DAF200B65142 /* DampingField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DampingField.h; sourceTree = "<group>"; };
+		A9892F851A24DAF200B65142 /* Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Field.cpp; sourceTree = "<group>"; };
+		A9892F861A24DAF200B65142 /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
+		A9892F871A24DAF200B65142 /* GameWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWorld.cpp; sourceTree = "<group>"; };
+		A9892F881A24DAF200B65142 /* GameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWorld.h; sourceTree = "<group>"; };
+		A9892F891A24DAF200B65142 /* GravityField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GravityField.cpp; sourceTree = "<group>"; };
+		A9892F8A1A24DAF200B65142 /* GravityField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityField.h; sourceTree = "<group>"; };
+		A9892F8C1A24DAF200B65142 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		A9892F8D1A24DAF200B65142 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		A9892F8E1A24DAF200B65142 /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		A9892F8F1A24DAF200B65142 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		A9892F901A24DAF200B65142 /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
+		A9892F911A24DAF200B65142 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		A9892F921A24DAF200B65142 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		A9892F931A24DAF200B65142 /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
+		A9892F941A24DAF200B65142 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9892F951A24DAF200B65142 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9892F961A24DAF200B65142 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9892F971A24DAF200B65142 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9892F981A24DAF200B65142 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +97,7 @@
 		A982DEBD1A1F93310095341A = {
 			isa = PBXGroup;
 			children = (
-				A982DEC81A1F93310095341A /* BouncingBall */,
+				A9892F751A24DAF200B65142 /* BouncingBall */,
 				A982DEE21A1F93310095341A /* BouncingBallTests */,
 				A982DEC71A1F93310095341A /* Products */,
 			);
@@ -109,35 +110,6 @@
 				A982DEDF1A1F93310095341A /* BouncingBallTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A982DEC81A1F93310095341A /* BouncingBall */ = {
-			isa = PBXGroup;
-			children = (
-				A982DECD1A1F93310095341A /* AppDelegate.h */,
-				A982DECE1A1F93310095341A /* AppDelegate.m */,
-				A982DED01A1F93310095341A /* ViewController.h */,
-				A982DED11A1F93310095341A /* ViewController.mm */,
-				A982DF061A1FE63B0095341A /* Ball.h */,
-				A982DF071A1FE63B0095341A /* Ball.mm */,
-				A982DF031A1FDB650095341A /* GameView.h */,
-				A982DF041A1FDB650095341A /* GameView.mm */,
-				A982DEF91A1FDB2E0095341A /* Simple2DPhysicsEngine */,
-				A982DED31A1F93310095341A /* Main.storyboard */,
-				A982DED61A1F93310095341A /* Images.xcassets */,
-				A982DED81A1F93310095341A /* LaunchScreen.xib */,
-				A982DEC91A1F93310095341A /* Supporting Files */,
-			);
-			path = BouncingBall;
-			sourceTree = "<group>";
-		};
-		A982DEC91A1F93310095341A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A982DECA1A1F93310095341A /* Info.plist */,
-				A982DECB1A1F93310095341A /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A982DEE21A1F93310095341A /* BouncingBallTests */ = {
@@ -157,29 +129,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A982DEF91A1FDB2E0095341A /* Simple2DPhysicsEngine */ = {
+		A9892F751A24DAF200B65142 /* BouncingBall */ = {
 			isa = PBXGroup;
 			children = (
-				A982DEFA1A1FDB2E0095341A /* Particle.cpp */,
-				A982DEFB1A1FDB2E0095341A /* Particle.h */,
-				A982DEFC1A1FDB2E0095341A /* GameWorld.cpp */,
-				A982DEFD1A1FDB2E0095341A /* GameWorld.h */,
-				A982DEFE1A1FDB2E0095341A /* Vector.cpp */,
-				A982DEFF1A1FDB2E0095341A /* Vector.h */,
-				A91483891A22F6C200965CE2 /* Field.cpp */,
-				A914838A1A22F6C200965CE2 /* Field.h */,
-				A914838C1A22F8A300965CE2 /* BuoyancyField.cpp */,
-				A914838D1A22F8A300965CE2 /* BuoyancyField.h */,
-				A914838F1A22F96D00965CE2 /* GravityField.cpp */,
-				A91483901A22F96D00965CE2 /* GravityField.h */,
-				A91483921A22FA2D00965CE2 /* DampingField.cpp */,
-				A91483931A22FA2D00965CE2 /* DampingField.h */,
-				A9F261671A2470D300FEB228 /* Rectangle.cpp */,
-				A9F261681A2470D300FEB228 /* Rectangle.h */,
-				A9F2616A1A24791F00FEB228 /* Circle.cpp */,
-				A9F2616B1A24791F00FEB228 /* Circle.h */,
+				A9892F761A24DAF200B65142 /* AppDelegate.h */,
+				A9892F771A24DAF200B65142 /* AppDelegate.m */,
+				A9892F781A24DAF200B65142 /* Ball.h */,
+				A9892F791A24DAF200B65142 /* Ball.mm */,
+				A9892F7A1A24DAF200B65142 /* LaunchScreen.xib */,
+				A9892F7C1A24DAF200B65142 /* Main.storyboard */,
+				A9892F7E1A24DAF200B65142 /* engine */,
+				A9892F921A24DAF200B65142 /* GameView.h */,
+				A9892F931A24DAF200B65142 /* GameView.mm */,
+				A9892F941A24DAF200B65142 /* Images.xcassets */,
+				A9892F951A24DAF200B65142 /* Info.plist */,
+				A9892F961A24DAF200B65142 /* main.m */,
+				A9892F971A24DAF200B65142 /* ViewController.h */,
+				A9892F981A24DAF200B65142 /* ViewController.mm */,
 			);
-			path = Simple2DPhysicsEngine;
+			path = BouncingBall;
+			sourceTree = "<group>";
+		};
+		A9892F7E1A24DAF200B65142 /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				A9892F7F1A24DAF200B65142 /* BuoyancyField.cpp */,
+				A9892F801A24DAF200B65142 /* BuoyancyField.h */,
+				A9892F811A24DAF200B65142 /* Circle.cpp */,
+				A9892F821A24DAF200B65142 /* Circle.h */,
+				A9892F831A24DAF200B65142 /* DampingField.cpp */,
+				A9892F841A24DAF200B65142 /* DampingField.h */,
+				A9892F851A24DAF200B65142 /* Field.cpp */,
+				A9892F861A24DAF200B65142 /* Field.h */,
+				A9892F871A24DAF200B65142 /* GameWorld.cpp */,
+				A9892F881A24DAF200B65142 /* GameWorld.h */,
+				A9892F891A24DAF200B65142 /* GravityField.cpp */,
+				A9892F8A1A24DAF200B65142 /* GravityField.h */,
+				A9892F8C1A24DAF200B65142 /* Particle.cpp */,
+				A9892F8D1A24DAF200B65142 /* Particle.h */,
+				A9892F8E1A24DAF200B65142 /* Rectangle.cpp */,
+				A9892F8F1A24DAF200B65142 /* Rectangle.h */,
+				A9892F901A24DAF200B65142 /* Vector.cpp */,
+				A9892F911A24DAF200B65142 /* Vector.h */,
+			);
+			path = engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A982DED51A1F93310095341A /* Main.storyboard in Resources */,
-				A982DEDA1A1F93310095341A /* LaunchScreen.xib in Resources */,
-				A982DED71A1F93310095341A /* Images.xcassets in Resources */,
+				A9892FA91A24DAF200B65142 /* Info.plist in Resources */,
+				A9892FA81A24DAF200B65142 /* Images.xcassets in Resources */,
+				A9892F9B1A24DAF200B65142 /* LaunchScreen.xib in Resources */,
+				A9892F9C1A24DAF200B65142 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,20 +276,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A982DF001A1FDB2E0095341A /* Particle.cpp in Sources */,
-				A914838B1A22F6C200965CE2 /* Field.cpp in Sources */,
-				A982DED21A1F93310095341A /* ViewController.mm in Sources */,
-				A982DF021A1FDB2E0095341A /* Vector.cpp in Sources */,
-				A982DF011A1FDB2E0095341A /* GameWorld.cpp in Sources */,
-				A91483941A22FA2D00965CE2 /* DampingField.cpp in Sources */,
-				A982DF081A1FE63B0095341A /* Ball.mm in Sources */,
-				A9F2616C1A24791F00FEB228 /* Circle.cpp in Sources */,
-				A91483911A22F96D00965CE2 /* GravityField.cpp in Sources */,
-				A9F261691A2470D300FEB228 /* Rectangle.cpp in Sources */,
-				A914838E1A22F8A300965CE2 /* BuoyancyField.cpp in Sources */,
-				A982DECF1A1F93310095341A /* AppDelegate.m in Sources */,
-				A982DECC1A1F93310095341A /* main.m in Sources */,
-				A982DF051A1FDB650095341A /* GameView.mm in Sources */,
+				A9892F9A1A24DAF200B65142 /* Ball.mm in Sources */,
+				A9892FA41A24DAF200B65142 /* Particle.cpp in Sources */,
+				A9892FAB1A24DAF200B65142 /* ViewController.mm in Sources */,
+				A9892FA61A24DAF200B65142 /* Vector.cpp in Sources */,
+				A9892F9E1A24DAF200B65142 /* Circle.cpp in Sources */,
+				A9892FA51A24DAF200B65142 /* Rectangle.cpp in Sources */,
+				A9892F991A24DAF200B65142 /* AppDelegate.m in Sources */,
+				A9892FA21A24DAF200B65142 /* GravityField.cpp in Sources */,
+				A9892F9F1A24DAF200B65142 /* DampingField.cpp in Sources */,
+				A9892FA01A24DAF200B65142 /* Field.cpp in Sources */,
+				A9892FA11A24DAF200B65142 /* GameWorld.cpp in Sources */,
+				A9892F9D1A24DAF200B65142 /* BuoyancyField.cpp in Sources */,
+				A9892FAA1A24DAF200B65142 /* main.m in Sources */,
+				A9892FA71A24DAF200B65142 /* GameView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,20 +312,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A982DED31A1F93310095341A /* Main.storyboard */ = {
+		A9892F7A1A24DAF200B65142 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A982DED41A1F93310095341A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A982DED81A1F93310095341A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A982DED91A1F93310095341A /* Base */,
+				A9892F7B1A24DAF200B65142 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A9892F7C1A24DAF200B65142 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9892F7D1A24DAF200B65142 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

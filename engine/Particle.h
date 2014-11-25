@@ -12,6 +12,7 @@ class Particle
     //Friend class
     friend class DampingField;
     friend class GravityField;
+    friend class BuoyancyField;
     
 public:
     
@@ -36,6 +37,8 @@ public:
 	const Vector& position()const;
 	const Vector& velocity()const;
 	const Vector& acceleration()const;
+    
+    Circle range()const;
     
 protected:
     

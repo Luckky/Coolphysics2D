@@ -19,6 +19,9 @@ public:
     bool contain(const Vector& point)const;
     bool overlap(const Circle& circle)const;
     
+    //Arithmetic
+    double overlapArea(const Circle& cirle)const;
+    
 private:
     double _x;
     double _y;

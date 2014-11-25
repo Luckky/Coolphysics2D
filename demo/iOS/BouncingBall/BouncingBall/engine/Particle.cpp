@@ -89,3 +89,8 @@ const Vector& Particle::acceleration()const
 {
 	return _acceleration;
 }
+
+Circle Particle::range()const
+{
+    return Circle(_position,_radius);
+}

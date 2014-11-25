@@ -13,6 +13,7 @@
 #include "Field.h"
 #include "DampingField.h"
 #include "GravityField.h"
+#include "BuoyancyField.h"
 
 @implementation GameView
 {
@@ -31,11 +32,13 @@
         
         Rectangle gameWorldRange(0,0,self.frame.size.width,self.frame.size.height);
         self.gameWorld=new GameWorld(gameWorldRange);
-        
-        Field* dampingField=new DampingField(gameWorldRange,-0.01);
+        Rectangle water(0,400,self.frame.size.width,self.frame.size.height-400);
+        Field* dampingField=new DampingField(water,-1.5);
         self.gameWorld->addField(dampingField);
-        Field* gravityField=new GravityField(gameWorldRange,Vector(0, 1000));
+        GravityField* gravityField=new GravityField(gameWorldRange,Vector(0, 1000));
         self.gameWorld->addField(gravityField);
+        Field* buoyancyField=new BuoyancyField(water,*gravityField,0.0002);
+        self.gameWorld->addField(buoyancyField);
         
         _particle0=new Particle(50,1,Vector(0,0),Vector(500,0),Vector(0,0),0.95);
         _ball0=[[Ball alloc] initWithParticle:_particle0 color:[UIColor colorWithRed:0 green:0 blue:1 alpha:1]];
@@ -59,6 +62,11 @@
 {
     CGContextRef ctx=UIGraphicsGetCurrentContext();
     CGContextClearRect(ctx, self.frame);
+    UIBezierPath *square = [UIBezierPath bezierPathWithRect:CGRectMake(0, 400, self.frame.size.width, self.frame.size.height-400)];
+    CGContextSetRGBFillColor(ctx, 0, 0, 1, 0.4);
+    [square fill];
+    [square stroke];
+    
     [_ball0 drawInContext:ctx];
     [_ball1 drawInContext:ctx];
     [_ball2 drawInContext:ctx];

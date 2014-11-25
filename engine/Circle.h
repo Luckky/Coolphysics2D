@@ -12,6 +12,9 @@ public:
     //Accessor
     const Vector& center()const;
     double radius()const;
+    
+    //Property
+    double area()const;
 private:
     Vector _center;
     double _radius;

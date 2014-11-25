@@ -6,5 +6,12 @@ GravityField::~GravityField(){}
 
 void GravityField::actOn(Particle& particle)const
 {
-    particle._acceleration+=_gravity;
+    if (_range.overlap(particle.range())) {
+        particle._acceleration+=_gravity;
+    }
+}
+
+const Vector& GravityField::gravity()const
+{
+    return _gravity;
 }
