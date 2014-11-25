@@ -2,7 +2,6 @@
 #define FIELD_H
 
 #include "Particle.h"
-#include "Structs.h"
 #include "Rectangle.h"
 
 class Field

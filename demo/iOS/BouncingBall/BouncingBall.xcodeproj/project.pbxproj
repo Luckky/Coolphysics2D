@@ -69,7 +69,6 @@
 		A982DF041A1FDB650095341A /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
 		A982DF061A1FE63B0095341A /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ball.h; path = BouncingBall/Ball.h; sourceTree = SOURCE_ROOT; };
 		A982DF071A1FE63B0095341A /* Ball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Ball.mm; path = BouncingBall/Ball.mm; sourceTree = SOURCE_ROOT; };
-		A9F261631A246E9100FEB228 /* Structs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Structs.h; sourceTree = "<group>"; };
 		A9F261671A2470D300FEB228 /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
 		A9F261681A2470D300FEB228 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
 		A9F2616A1A24791F00FEB228 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
@@ -175,7 +174,6 @@
 				A91483901A22F96D00965CE2 /* GravityField.h */,
 				A91483921A22FA2D00965CE2 /* DampingField.cpp */,
 				A91483931A22FA2D00965CE2 /* DampingField.h */,
-				A9F261631A246E9100FEB228 /* Structs.h */,
 				A9F261671A2470D300FEB228 /* Rectangle.cpp */,
 				A9F261681A2470D300FEB228 /* Rectangle.h */,
 				A9F2616A1A24791F00FEB228 /* Circle.cpp */,
