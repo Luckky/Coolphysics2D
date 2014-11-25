@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 JIRENTIANXIANG. All rights reserved.
 //
 
-#import "Entity.h"
+#import "Particle.h"
 #import <UIKit/UIKit.h>
 
 @interface Ball : UIView
 
--(id)initWithEntity:(Entity*)entity color:(UIColor*)color ;
+-(id)initWithParticle:(Particle*)particle color:(UIColor*)color ;
 
 -(void)drawInContext:(CGContextRef)context;
 

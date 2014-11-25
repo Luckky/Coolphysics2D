@@ -21,6 +21,11 @@ Vector::Vector(const Vector& v1,const Vector& v2)
 	_y=v2._y-v1._y;
 }
 
+Vector Vector::zeroVector()
+{
+    return Vector(0,0);
+}
+
 double Vector::x()const
 {
     return _x;

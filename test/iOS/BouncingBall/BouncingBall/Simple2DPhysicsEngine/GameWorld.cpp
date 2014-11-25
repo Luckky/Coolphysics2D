@@ -1,48 +1,59 @@
 #include "GameWorld.h"
 
-GameWorld::GameWorld(Frame frame,Vector gravity,double damping):_frame(frame),_gravity(gravity),_damping(damping){}
+GameWorld::GameWorld(Rectangle range):_range(range){}
 GameWorld::~GameWorld()
 {
-    for (int i=0; i<_entities.size(); i++) {
-        delete _entities[i];
+    for (int i=0; i<_particles.size(); i++) {
+        delete _particles[i];
+    }
+    for (int i=0; i<_fields.size(); i++) {
+        delete _fields[i];
     }
 }
 
-const Frame& GameWorld::frame()const
+const Rectangle& GameWorld::range()const
 {
-	return _frame;
+	return _range;
 }
 
-void GameWorld::addEntity(Entity* entity)
+void GameWorld::addParticle(Particle* Particle)
 {
-	_entities.push_back(entity);
+	_particles.push_back(Particle);
+}
+void GameWorld::addField(Field *field)
+{
+    _fields.push_back(field);
 }
 
 void GameWorld::update(double timeInterval)
 {
-    for (int i=0; i<_entities.size(); i++) {
-        Entity* ei=_entities[i];
-        bounce(ei);
-        ei->update(timeInterval,_gravity,_damping);
-        for (int j=i+1; j<_entities.size(); j++) {
-            Entity* ej=_entities[j];
-            if (_entities[i]->collideWith(*_entities[j])) {
-                Entity::handleCollision(*ei,*ej);
+    for (int i=0; i<_particles.size(); i++) {
+        Particle* pi=_particles[i];
+        bounce(pi);
+        pi->update(timeInterval);
+        for (int j=i+1; j<_particles.size(); j++) {
+            Particle* pj=_particles[j];
+            if (_particles[i]->collideWith(*_particles[j])) {
+                Particle::handleCollision(*pi,*pj);
             }
+        }
+        
+        for (int j=0; j<_fields.size(); j++) {
+            _fields[j]->actOn(*_particles[i]);
         }
     }
 }
 
-void GameWorld::bounce(Entity* entity)const
+void GameWorld::bounce(Particle* Particle)const
 {
-	double x=entity->position().x();
-	double y=entity->position().y();
-    double vx=entity->velocity().x();
-    double vy=entity->velocity().y();
-    double r=entity->radius();
-	if ((x+r>_frame.right&&vx>0)||(x-r<_frame.left&&vx<0)){
-		entity->reflectAbout(Vector(0,1));
-	}else if((y-r<_frame.top&&vy<0)||(y+r>_frame.bottom&&vy>0)){
-		entity->reflectAbout(Vector(1,0));
+	double x=Particle->position().x();
+	double y=Particle->position().y();
+    double vx=Particle->velocity().x();
+    double vy=Particle->velocity().y();
+    double r=Particle->radius();
+	if ((x+r>_range.width()&&vx>0)||(x-r<_range.x()&&vx<0)){
+		Particle->reflectAbout(Vector(0,1));
+	}else if((y-r<_range.y()&&vy<0)||(y+r>_range.height()&&vy>0)){
+		Particle->reflectAbout(Vector(1,0));
 	}
 }

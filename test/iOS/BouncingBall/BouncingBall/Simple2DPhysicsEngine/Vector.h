@@ -13,14 +13,17 @@ public:
     //Debugging
     string description()const;
     
-	//Constructors
+	//Constructor
 	Vector();
 	Vector(double x,double y);
 	Vector(const Vector& v);
 	const Vector& operator =(const Vector& v);
 	Vector(const Vector& v1,const Vector& v2);
     
-    //Data memeber accessors
+    //Static function
+    static Vector zeroVector();
+    
+    //Accessor
     double x()const;
     double y()const;
 
@@ -29,7 +32,7 @@ public:
 	double modulus()const;
 	double radian()const;
 
-	//Arithmetics
+	//Arithmetic
 	Vector operator+(const Vector& v)const;
     Vector operator-(const Vector& v)const;
 	Vector operator*(double number)const;

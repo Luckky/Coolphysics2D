@@ -2,38 +2,34 @@
 #define GAMEWORLD_H
 
 #include "Vector.h"
-#include "Entity.h"
+#include "Particle.h"
+#include "Field.h"
+#include "Rectangle.h"
+
 #include <vector>
 
-typedef struct tagFrame
-{
-	double left;
-	double top;
-	double right;
-	double bottom;
-}Frame;
 
 class GameWorld
 {
 public:
 	//Constructor
-	GameWorld(Frame frame,Vector gravity,double damping);
+	GameWorld(Rectangle range);
     //Destructor
     ~GameWorld();
 
 	//Accessor
-	const Frame& frame()const;
+	const Rectangle& range()const;
 
-	void addEntity(Entity* entity);
+	void addParticle(Particle* Particle);
+    void addField(Field* field);
 
 	void update(double timeInterval);
 
 private:
-	void bounce(Entity* entity)const;
-	Frame _frame;
-	Vector _gravity;
-	double _damping;
-	std::vector<Entity*> _entities;
+	void bounce(Particle* Particle)const;
+	Rectangle _range;
+	std::vector<Particle*> _particles;
+    std::vector<Field*> _fields;
 };
 
 #endif

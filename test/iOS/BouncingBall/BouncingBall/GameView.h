@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Entity.h"
+#import "Particle.h"
 #import "GameWorld.h"
 
 @interface GameView : UIView

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A914838B1A22F6C200965CE2 /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A91483891A22F6C200965CE2 /* Field.cpp */; };
+		A914838E1A22F8A300965CE2 /* BuoyancyField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A914838C1A22F8A300965CE2 /* BuoyancyField.cpp */; };
+		A91483911A22F96D00965CE2 /* GravityField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A914838F1A22F96D00965CE2 /* GravityField.cpp */; };
+		A91483941A22FA2D00965CE2 /* DampingField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A91483921A22FA2D00965CE2 /* DampingField.cpp */; };
 		A982DECC1A1F93310095341A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A982DECB1A1F93310095341A /* main.m */; };
 		A982DECF1A1F93310095341A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A982DECE1A1F93310095341A /* AppDelegate.m */; };
 		A982DED21A1F93310095341A /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A982DED11A1F93310095341A /* ViewController.mm */; };
@@ -14,11 +18,13 @@
 		A982DED71A1F93310095341A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A982DED61A1F93310095341A /* Images.xcassets */; };
 		A982DEDA1A1F93310095341A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A982DED81A1F93310095341A /* LaunchScreen.xib */; };
 		A982DEE61A1F93310095341A /* BouncingBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A982DEE51A1F93310095341A /* BouncingBallTests.m */; };
-		A982DF001A1FDB2E0095341A /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A982DEFA1A1FDB2E0095341A /* Entity.cpp */; };
+		A982DF001A1FDB2E0095341A /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A982DEFA1A1FDB2E0095341A /* Particle.cpp */; };
 		A982DF011A1FDB2E0095341A /* GameWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A982DEFC1A1FDB2E0095341A /* GameWorld.cpp */; };
 		A982DF021A1FDB2E0095341A /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A982DEFE1A1FDB2E0095341A /* Vector.cpp */; };
 		A982DF051A1FDB650095341A /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A982DF041A1FDB650095341A /* GameView.mm */; };
 		A982DF081A1FE63B0095341A /* Ball.mm in Sources */ = {isa = PBXBuildFile; fileRef = A982DF071A1FE63B0095341A /* Ball.mm */; };
+		A9F261691A2470D300FEB228 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9F261671A2470D300FEB228 /* Rectangle.cpp */; };
+		A9F2616C1A24791F00FEB228 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9F2616A1A24791F00FEB228 /* Circle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A91483891A22F6C200965CE2 /* Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Field.cpp; sourceTree = "<group>"; };
+		A914838A1A22F6C200965CE2 /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
+		A914838C1A22F8A300965CE2 /* BuoyancyField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuoyancyField.cpp; sourceTree = "<group>"; };
+		A914838D1A22F8A300965CE2 /* BuoyancyField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuoyancyField.h; sourceTree = "<group>"; };
+		A914838F1A22F96D00965CE2 /* GravityField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GravityField.cpp; sourceTree = "<group>"; };
+		A91483901A22F96D00965CE2 /* GravityField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityField.h; sourceTree = "<group>"; };
+		A91483921A22FA2D00965CE2 /* DampingField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DampingField.cpp; sourceTree = "<group>"; };
+		A91483931A22FA2D00965CE2 /* DampingField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DampingField.h; sourceTree = "<group>"; };
 		A982DEC61A1F93310095341A /* BouncingBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BouncingBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A982DECA1A1F93310095341A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A982DECB1A1F93310095341A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,8 +59,8 @@
 		A982DEDF1A1F93310095341A /* BouncingBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncingBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A982DEE41A1F93310095341A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A982DEE51A1F93310095341A /* BouncingBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncingBallTests.m; sourceTree = "<group>"; };
-		A982DEFA1A1FDB2E0095341A /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
-		A982DEFB1A1FDB2E0095341A /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		A982DEFA1A1FDB2E0095341A /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		A982DEFB1A1FDB2E0095341A /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
 		A982DEFC1A1FDB2E0095341A /* GameWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWorld.cpp; sourceTree = "<group>"; };
 		A982DEFD1A1FDB2E0095341A /* GameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWorld.h; sourceTree = "<group>"; };
 		A982DEFE1A1FDB2E0095341A /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
@@ -55,6 +69,11 @@
 		A982DF041A1FDB650095341A /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
 		A982DF061A1FE63B0095341A /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ball.h; path = BouncingBall/Ball.h; sourceTree = SOURCE_ROOT; };
 		A982DF071A1FE63B0095341A /* Ball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Ball.mm; path = BouncingBall/Ball.mm; sourceTree = SOURCE_ROOT; };
+		A9F261631A246E9100FEB228 /* Structs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Structs.h; sourceTree = "<group>"; };
+		A9F261671A2470D300FEB228 /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		A9F261681A2470D300FEB228 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		A9F2616A1A24791F00FEB228 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		A9F2616B1A24791F00FEB228 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,12 +161,25 @@
 		A982DEF91A1FDB2E0095341A /* Simple2DPhysicsEngine */ = {
 			isa = PBXGroup;
 			children = (
-				A982DEFA1A1FDB2E0095341A /* Entity.cpp */,
-				A982DEFB1A1FDB2E0095341A /* Entity.h */,
+				A982DEFA1A1FDB2E0095341A /* Particle.cpp */,
+				A982DEFB1A1FDB2E0095341A /* Particle.h */,
 				A982DEFC1A1FDB2E0095341A /* GameWorld.cpp */,
 				A982DEFD1A1FDB2E0095341A /* GameWorld.h */,
 				A982DEFE1A1FDB2E0095341A /* Vector.cpp */,
 				A982DEFF1A1FDB2E0095341A /* Vector.h */,
+				A91483891A22F6C200965CE2 /* Field.cpp */,
+				A914838A1A22F6C200965CE2 /* Field.h */,
+				A914838C1A22F8A300965CE2 /* BuoyancyField.cpp */,
+				A914838D1A22F8A300965CE2 /* BuoyancyField.h */,
+				A914838F1A22F96D00965CE2 /* GravityField.cpp */,
+				A91483901A22F96D00965CE2 /* GravityField.h */,
+				A91483921A22FA2D00965CE2 /* DampingField.cpp */,
+				A91483931A22FA2D00965CE2 /* DampingField.h */,
+				A9F261631A246E9100FEB228 /* Structs.h */,
+				A9F261671A2470D300FEB228 /* Rectangle.cpp */,
+				A9F261681A2470D300FEB228 /* Rectangle.h */,
+				A9F2616A1A24791F00FEB228 /* Circle.cpp */,
+				A9F2616B1A24791F00FEB228 /* Circle.h */,
 			);
 			path = Simple2DPhysicsEngine;
 			sourceTree = "<group>";
@@ -252,11 +284,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A982DF001A1FDB2E0095341A /* Entity.cpp in Sources */,
+				A982DF001A1FDB2E0095341A /* Particle.cpp in Sources */,
+				A914838B1A22F6C200965CE2 /* Field.cpp in Sources */,
 				A982DED21A1F93310095341A /* ViewController.mm in Sources */,
 				A982DF021A1FDB2E0095341A /* Vector.cpp in Sources */,
 				A982DF011A1FDB2E0095341A /* GameWorld.cpp in Sources */,
+				A91483941A22FA2D00965CE2 /* DampingField.cpp in Sources */,
 				A982DF081A1FE63B0095341A /* Ball.mm in Sources */,
+				A9F2616C1A24791F00FEB228 /* Circle.cpp in Sources */,
+				A91483911A22F96D00965CE2 /* GravityField.cpp in Sources */,
+				A9F261691A2470D300FEB228 /* Rectangle.cpp in Sources */,
+				A914838E1A22F8A300965CE2 /* BuoyancyField.cpp in Sources */,
 				A982DECF1A1F93310095341A /* AppDelegate.m in Sources */,
 				A982DECC1A1F93310095341A /* main.m in Sources */,
 				A982DF051A1FDB650095341A /* GameView.mm in Sources */,
@@ -452,6 +490,7 @@
 				A982DEEB1A1F93310095341A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A982DEEC1A1F93310095341A /* Build configuration list for PBXNativeTarget "BouncingBallTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +499,7 @@
 				A982DEEE1A1F93310095341A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

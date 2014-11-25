@@ -11,14 +11,14 @@
 @implementation Ball
 {
     UIColor* _color;
-    Entity* _entity;
+    Particle* _particle;
 }
 
--(id)initWithEntity:(Entity *)entity color:(UIColor*)color
+-(id)initWithParticle:(Particle *)particle color:(UIColor*)color
 {
     if (self=[super init]) {
         _color=color;
-        _entity=entity;
+        _particle=particle;
     }
     return self;
 }
@@ -26,11 +26,11 @@
 -(void)drawInContext:(CGContextRef)context
 {
     
-    CGPoint thePoint = CGPointMake(_entity->position().x(), _entity->position().y());
+    CGPoint thePoint = CGPointMake(_particle->position().x(), _particle->position().y());
     
     CGContextMoveToPoint(context, thePoint.x, thePoint.y);
     CGContextSetFillColor(context, CGColorGetComponents(_color.CGColor));
-    CGContextAddArc(context, thePoint.x, thePoint.y, _entity->radius(),  0, 2*M_PI, 0);
+    CGContextAddArc(context, thePoint.x, thePoint.y, _particle->radius(),  0, 2*M_PI, 0);
     CGContextFillPath(context);
 }
 
