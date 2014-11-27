@@ -10,8 +10,6 @@
 #import "Particle.h"
 #import "GameWorld.h"
 
-using namespace CoolPhysics2D;
-
 @interface GameView : UIView
 
 @property GameWorld* gameWorld;
