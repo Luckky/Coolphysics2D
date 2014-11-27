@@ -9,6 +9,8 @@
 #import "Particle.h"
 #import <UIKit/UIKit.h>
 
+using namespace CoolPhysics2D;
+
 @interface Ball : UIView
 
 -(id)initWithParticle:(Particle*)particle color:(UIColor*)color ;

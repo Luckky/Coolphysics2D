@@ -14,6 +14,7 @@
 #include "DampingField.h"
 #include "GravityField.h"
 #include "BuoyancyField.h"
+#include "CentripetalGravityField.h"
 
 @implementation GameView
 {
@@ -39,6 +40,8 @@
         self.gameWorld->addField(gravityField);
         Field* buoyancyField=new BuoyancyField(water,*gravityField,0.0002);
         self.gameWorld->addField(buoyancyField);
+//        Field* centripetalGravityField=new CentripetalGravityField(gameWorldRange,Vector(200,200),500000);
+//        self.gameWorld->addField(centripetalGravityField);
         
         _particle0=new Particle(50,1,Vector(0,0),Vector(500,0),Vector(0,0),0.95);
         _ball0=[[Ball alloc] initWithParticle:_particle0 color:[UIColor colorWithRed:0 green:0 blue:1 alpha:1]];
