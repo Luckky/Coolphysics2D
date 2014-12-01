@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  BouncingBall
+//  CoolPhysics2DDemo
 //
-//  Created by JIRENTIANXIANG on 11/21/14.
+//  Created by JIRENTIANXIANG on 11/28/14.
 //  Copyright (c) 2014 JIRENTIANXIANG. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UINavigationController* navigationController=[[UINavigationController alloc] init];
+    self.window.rootViewController=navigationController;
+    
+    ViewController* tableViewController=[[ViewController alloc] init];
+    //self.window.rootViewController=tableViewController;
+    [navigationController pushViewController:tableViewController animated:YES];
+    
     return YES;
 }
 

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BouncingBall.xcscheme</key>
+		<key>CoolPhysics2DDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A982DEC51A1F93310095341A</key>
+		<key>A90BA5481A28B7BF00078424</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A982DEDE1A1F93310095341A</key>
+		<key>A90BA5611A28B7BF00078424</key>
 		<dict>
 			<key>primary</key>
 			<true/>

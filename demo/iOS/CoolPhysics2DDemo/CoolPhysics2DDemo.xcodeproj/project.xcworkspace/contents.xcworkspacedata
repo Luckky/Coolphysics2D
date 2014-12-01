@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BouncingBall.xcodeproj">
+      location = "self:CoolPhysics2DDemo.xcodeproj">
    </FileRef>
 </Workspace>

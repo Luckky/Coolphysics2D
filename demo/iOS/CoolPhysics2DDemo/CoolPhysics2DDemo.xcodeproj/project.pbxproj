@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A90BA54F1A28B7BF00078424 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A90BA54E1A28B7BF00078424 /* main.m */; };
+		A90BA5521A28B7BF00078424 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A90BA5511A28B7BF00078424 /* AppDelegate.mm */; };
+		A90BA5551A28B7BF00078424 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A90BA5541A28B7BF00078424 /* ViewController.mm */; };
+		A90BA5581A28B7BF00078424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90BA5561A28B7BF00078424 /* Main.storyboard */; };
+		A90BA55A1A28B7BF00078424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90BA5591A28B7BF00078424 /* Images.xcassets */; };
+		A90BA55D1A28B7BF00078424 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90BA55B1A28B7BF00078424 /* LaunchScreen.xib */; };
+		A90BA5691A28B7BF00078424 /* CoolPhysics2DDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A90BA5681A28B7BF00078424 /* CoolPhysics2DDemoTests.m */; };
+		A980C2FF1A2C608300FA62E0 /* BuoyancyField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2E01A2C608300FA62E0 /* BuoyancyField.cpp */; };
+		A980C3001A2C608300FA62E0 /* CentripetalGravityField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2E21A2C608300FA62E0 /* CentripetalGravityField.cpp */; };
+		A980C3011A2C608300FA62E0 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2E41A2C608300FA62E0 /* Circle.cpp */; };
+		A980C3021A2C608300FA62E0 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2E61A2C608300FA62E0 /* Color.cpp */; };
+		A980C3031A2C608300FA62E0 /* DampingField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2E81A2C608300FA62E0 /* DampingField.cpp */; };
+		A980C3041A2C608300FA62E0 /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2EA1A2C608300FA62E0 /* Field.cpp */; };
+		A980C3051A2C608300FA62E0 /* GameWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2EC1A2C608300FA62E0 /* GameWorld.cpp */; };
+		A980C3061A2C608300FA62E0 /* GravityField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2EE1A2C608300FA62E0 /* GravityField.cpp */; };
+		A980C3071A2C608300FA62E0 /* ObstacleField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2F01A2C608300FA62E0 /* ObstacleField.cpp */; };
+		A980C3081A2C608300FA62E0 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2F21A2C608300FA62E0 /* Particle.cpp */; };
+		A980C3091A2C608300FA62E0 /* ParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2F41A2C608300FA62E0 /* ParticleEmitter.cpp */; };
+		A980C30A1A2C608300FA62E0 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2F61A2C608300FA62E0 /* Rectangle.cpp */; };
+		A980C30B1A2C608300FA62E0 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A980C2F81A2C608300FA62E0 /* Vector.cpp */; };
+		A980C30C1A2C608300FA62E0 /* CP2DGameWorldRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A980C2FC1A2C608300FA62E0 /* CP2DGameWorldRenderer.mm */; };
+		A980C30D1A2C608300FA62E0 /* CP2DParticleRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A980C2FE1A2C608300FA62E0 /* CP2DParticleRenderer.mm */; };
+		A980C3191A2C63A500FA62E0 /* BouncingBallViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A980C3161A2C63A500FA62E0 /* BouncingBallViewController.mm */; };
+		A980C31A1A2C63A500FA62E0 /* BouncingBallView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A980C3181A2C63A500FA62E0 /* BouncingBallView.mm */; };
+		A980C32B1A2C67B900FA62E0 /* CP2DGameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A980C32A1A2C67B900FA62E0 /* CP2DGameView.mm */; };
+		A980C3311A2C67E200FA62E0 /* FireView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A980C32E1A2C67E200FA62E0 /* FireView.mm */; };
+		A980C3321A2C67E200FA62E0 /* FireViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A980C3301A2C67E200FA62E0 /* FireViewController.mm */; };
+		A980C3381A2C6BF900FA62E0 /* CP2DGameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A980C3371A2C6BF900FA62E0 /* CP2DGameViewController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A90BA5631A28B7BF00078424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90BA5411A28B7BF00078424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90BA5481A28B7BF00078424;
+			remoteInfo = CoolPhysics2DDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A90BA5491A28B7BF00078424 /* CoolPhysics2DDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolPhysics2DDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90BA54D1A28B7BF00078424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90BA54E1A28B7BF00078424 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A90BA5501A28B7BF00078424 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A90BA5511A28B7BF00078424 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		A90BA5531A28B7BF00078424 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A90BA5541A28B7BF00078424 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		A90BA5571A28B7BF00078424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A90BA5591A28B7BF00078424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A90BA55C1A28B7BF00078424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A90BA5621A28B7BF00078424 /* CoolPhysics2DDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolPhysics2DDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90BA5671A28B7BF00078424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90BA5681A28B7BF00078424 /* CoolPhysics2DDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoolPhysics2DDemoTests.m; sourceTree = "<group>"; };
+		A980C2DE1A2C608300FA62E0 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		A980C2E01A2C608300FA62E0 /* BuoyancyField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuoyancyField.cpp; sourceTree = "<group>"; };
+		A980C2E11A2C608300FA62E0 /* BuoyancyField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuoyancyField.h; sourceTree = "<group>"; };
+		A980C2E21A2C608300FA62E0 /* CentripetalGravityField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CentripetalGravityField.cpp; sourceTree = "<group>"; };
+		A980C2E31A2C608300FA62E0 /* CentripetalGravityField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CentripetalGravityField.h; sourceTree = "<group>"; };
+		A980C2E41A2C608300FA62E0 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		A980C2E51A2C608300FA62E0 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		A980C2E61A2C608300FA62E0 /* Color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Color.cpp; sourceTree = "<group>"; };
+		A980C2E71A2C608300FA62E0 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		A980C2E81A2C608300FA62E0 /* DampingField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DampingField.cpp; sourceTree = "<group>"; };
+		A980C2E91A2C608300FA62E0 /* DampingField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DampingField.h; sourceTree = "<group>"; };
+		A980C2EA1A2C608300FA62E0 /* Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Field.cpp; sourceTree = "<group>"; };
+		A980C2EB1A2C608300FA62E0 /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
+		A980C2EC1A2C608300FA62E0 /* GameWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWorld.cpp; sourceTree = "<group>"; };
+		A980C2ED1A2C608300FA62E0 /* GameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWorld.h; sourceTree = "<group>"; };
+		A980C2EE1A2C608300FA62E0 /* GravityField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GravityField.cpp; sourceTree = "<group>"; };
+		A980C2EF1A2C608300FA62E0 /* GravityField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityField.h; sourceTree = "<group>"; };
+		A980C2F01A2C608300FA62E0 /* ObstacleField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObstacleField.cpp; sourceTree = "<group>"; };
+		A980C2F11A2C608300FA62E0 /* ObstacleField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObstacleField.h; sourceTree = "<group>"; };
+		A980C2F21A2C608300FA62E0 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		A980C2F31A2C608300FA62E0 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		A980C2F41A2C608300FA62E0 /* ParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEmitter.cpp; sourceTree = "<group>"; };
+		A980C2F51A2C608300FA62E0 /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEmitter.h; sourceTree = "<group>"; };
+		A980C2F61A2C608300FA62E0 /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		A980C2F71A2C608300FA62E0 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		A980C2F81A2C608300FA62E0 /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
+		A980C2F91A2C608300FA62E0 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		A980C2FB1A2C608300FA62E0 /* CP2DGameWorldRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CP2DGameWorldRenderer.h; sourceTree = "<group>"; };
+		A980C2FC1A2C608300FA62E0 /* CP2DGameWorldRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CP2DGameWorldRenderer.mm; sourceTree = "<group>"; };
+		A980C2FD1A2C608300FA62E0 /* CP2DParticleRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CP2DParticleRenderer.h; sourceTree = "<group>"; };
+		A980C2FE1A2C608300FA62E0 /* CP2DParticleRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CP2DParticleRenderer.mm; sourceTree = "<group>"; };
+		A980C3151A2C63A500FA62E0 /* BouncingBallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncingBallViewController.h; sourceTree = "<group>"; };
+		A980C3161A2C63A500FA62E0 /* BouncingBallViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BouncingBallViewController.mm; sourceTree = "<group>"; };
+		A980C3171A2C63A500FA62E0 /* BouncingBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncingBallView.h; sourceTree = "<group>"; };
+		A980C3181A2C63A500FA62E0 /* BouncingBallView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BouncingBallView.mm; sourceTree = "<group>"; };
+		A980C3291A2C67B900FA62E0 /* CP2DGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CP2DGameView.h; sourceTree = "<group>"; };
+		A980C32A1A2C67B900FA62E0 /* CP2DGameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CP2DGameView.mm; sourceTree = "<group>"; };
+		A980C32D1A2C67E200FA62E0 /* FireView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireView.h; sourceTree = "<group>"; };
+		A980C32E1A2C67E200FA62E0 /* FireView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FireView.mm; sourceTree = "<group>"; };
+		A980C32F1A2C67E200FA62E0 /* FireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireViewController.h; sourceTree = "<group>"; };
+		A980C3301A2C67E200FA62E0 /* FireViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FireViewController.mm; sourceTree = "<group>"; };
+		A980C3361A2C6BF900FA62E0 /* CP2DGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CP2DGameViewController.h; sourceTree = "<group>"; };
+		A980C3371A2C6BF900FA62E0 /* CP2DGameViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CP2DGameViewController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A90BA5461A28B7BF00078424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90BA55F1A28B7BF00078424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A90BA5401A28B7BF00078424 = {
+			isa = PBXGroup;
+			children = (
+				A980C2DC1A2C608300FA62E0 /* engine */,
+				A90BA54B1A28B7BF00078424 /* CoolPhysics2DDemo */,
+				A90BA5651A28B7BF00078424 /* CoolPhysics2DDemoTests */,
+				A90BA54A1A28B7BF00078424 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A90BA54A1A28B7BF00078424 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A90BA5491A28B7BF00078424 /* CoolPhysics2DDemo.app */,
+				A90BA5621A28B7BF00078424 /* CoolPhysics2DDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A90BA54B1A28B7BF00078424 /* CoolPhysics2DDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A980C32C1A2C67E200FA62E0 /* Fire */,
+				A980C3141A2C63A500FA62E0 /* BouncingBall */,
+				A90BA5501A28B7BF00078424 /* AppDelegate.h */,
+				A90BA5511A28B7BF00078424 /* AppDelegate.mm */,
+				A90BA5531A28B7BF00078424 /* ViewController.h */,
+				A90BA5541A28B7BF00078424 /* ViewController.mm */,
+				A90BA5561A28B7BF00078424 /* Main.storyboard */,
+				A90BA5591A28B7BF00078424 /* Images.xcassets */,
+				A90BA55B1A28B7BF00078424 /* LaunchScreen.xib */,
+				A90BA54C1A28B7BF00078424 /* Supporting Files */,
+			);
+			path = CoolPhysics2DDemo;
+			sourceTree = "<group>";
+		};
+		A90BA54C1A28B7BF00078424 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A90BA54D1A28B7BF00078424 /* Info.plist */,
+				A90BA54E1A28B7BF00078424 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A90BA5651A28B7BF00078424 /* CoolPhysics2DDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A90BA5681A28B7BF00078424 /* CoolPhysics2DDemoTests.m */,
+				A90BA5661A28B7BF00078424 /* Supporting Files */,
+			);
+			path = CoolPhysics2DDemoTests;
+			sourceTree = "<group>";
+		};
+		A90BA5661A28B7BF00078424 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A90BA5671A28B7BF00078424 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A980C2DC1A2C608300FA62E0 /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				A980C2DD1A2C608300FA62E0 /* config */,
+				A980C2DF1A2C608300FA62E0 /* core */,
+				A980C2FA1A2C608300FA62E0 /* ios */,
+			);
+			path = engine;
+			sourceTree = "<group>";
+		};
+		A980C2DD1A2C608300FA62E0 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				A980C2DE1A2C608300FA62E0 /* config.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		A980C2DF1A2C608300FA62E0 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A980C2E01A2C608300FA62E0 /* BuoyancyField.cpp */,
+				A980C2E11A2C608300FA62E0 /* BuoyancyField.h */,
+				A980C2E21A2C608300FA62E0 /* CentripetalGravityField.cpp */,
+				A980C2E31A2C608300FA62E0 /* CentripetalGravityField.h */,
+				A980C2E41A2C608300FA62E0 /* Circle.cpp */,
+				A980C2E51A2C608300FA62E0 /* Circle.h */,
+				A980C2E61A2C608300FA62E0 /* Color.cpp */,
+				A980C2E71A2C608300FA62E0 /* Color.h */,
+				A980C2E81A2C608300FA62E0 /* DampingField.cpp */,
+				A980C2E91A2C608300FA62E0 /* DampingField.h */,
+				A980C2EA1A2C608300FA62E0 /* Field.cpp */,
+				A980C2EB1A2C608300FA62E0 /* Field.h */,
+				A980C2EC1A2C608300FA62E0 /* GameWorld.cpp */,
+				A980C2ED1A2C608300FA62E0 /* GameWorld.h */,
+				A980C2EE1A2C608300FA62E0 /* GravityField.cpp */,
+				A980C2EF1A2C608300FA62E0 /* GravityField.h */,
+				A980C2F01A2C608300FA62E0 /* ObstacleField.cpp */,
+				A980C2F11A2C608300FA62E0 /* ObstacleField.h */,
+				A980C2F21A2C608300FA62E0 /* Particle.cpp */,
+				A980C2F31A2C608300FA62E0 /* Particle.h */,
+				A980C2F41A2C608300FA62E0 /* ParticleEmitter.cpp */,
+				A980C2F51A2C608300FA62E0 /* ParticleEmitter.h */,
+				A980C2F61A2C608300FA62E0 /* Rectangle.cpp */,
+				A980C2F71A2C608300FA62E0 /* Rectangle.h */,
+				A980C2F81A2C608300FA62E0 /* Vector.cpp */,
+				A980C2F91A2C608300FA62E0 /* Vector.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		A980C2FA1A2C608300FA62E0 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				A980C2FB1A2C608300FA62E0 /* CP2DGameWorldRenderer.h */,
+				A980C2FC1A2C608300FA62E0 /* CP2DGameWorldRenderer.mm */,
+				A980C2FD1A2C608300FA62E0 /* CP2DParticleRenderer.h */,
+				A980C2FE1A2C608300FA62E0 /* CP2DParticleRenderer.mm */,
+				A980C3291A2C67B900FA62E0 /* CP2DGameView.h */,
+				A980C32A1A2C67B900FA62E0 /* CP2DGameView.mm */,
+				A980C3361A2C6BF900FA62E0 /* CP2DGameViewController.h */,
+				A980C3371A2C6BF900FA62E0 /* CP2DGameViewController.mm */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		A980C3141A2C63A500FA62E0 /* BouncingBall */ = {
+			isa = PBXGroup;
+			children = (
+				A980C3151A2C63A500FA62E0 /* BouncingBallViewController.h */,
+				A980C3161A2C63A500FA62E0 /* BouncingBallViewController.mm */,
+				A980C3171A2C63A500FA62E0 /* BouncingBallView.h */,
+				A980C3181A2C63A500FA62E0 /* BouncingBallView.mm */,
+			);
+			path = BouncingBall;
+			sourceTree = "<group>";
+		};
+		A980C32C1A2C67E200FA62E0 /* Fire */ = {
+			isa = PBXGroup;
+			children = (
+				A980C32D1A2C67E200FA62E0 /* FireView.h */,
+				A980C32E1A2C67E200FA62E0 /* FireView.mm */,
+				A980C32F1A2C67E200FA62E0 /* FireViewController.h */,
+				A980C3301A2C67E200FA62E0 /* FireViewController.mm */,
+			);
+			path = Fire;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A90BA5481A28B7BF00078424 /* CoolPhysics2DDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90BA56C1A28B7BF00078424 /* Build configuration list for PBXNativeTarget "CoolPhysics2DDemo" */;
+			buildPhases = (
+				A90BA5451A28B7BF00078424 /* Sources */,
+				A90BA5461A28B7BF00078424 /* Frameworks */,
+				A90BA5471A28B7BF00078424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoolPhysics2DDemo;
+			productName = CoolPhysics2DDemo;
+			productReference = A90BA5491A28B7BF00078424 /* CoolPhysics2DDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A90BA5611A28B7BF00078424 /* CoolPhysics2DDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90BA56F1A28B7BF00078424 /* Build configuration list for PBXNativeTarget "CoolPhysics2DDemoTests" */;
+			buildPhases = (
+				A90BA55E1A28B7BF00078424 /* Sources */,
+				A90BA55F1A28B7BF00078424 /* Frameworks */,
+				A90BA5601A28B7BF00078424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90BA5641A28B7BF00078424 /* PBXTargetDependency */,
+			);
+			name = CoolPhysics2DDemoTests;
+			productName = CoolPhysics2DDemoTests;
+			productReference = A90BA5621A28B7BF00078424 /* CoolPhysics2DDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90BA5411A28B7BF00078424 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = JIRENTIANXIANG;
+				TargetAttributes = {
+					A90BA5481A28B7BF00078424 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					A90BA5611A28B7BF00078424 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = A90BA5481A28B7BF00078424;
+					};
+				};
+			};
+			buildConfigurationList = A90BA5441A28B7BF00078424 /* Build configuration list for PBXProject "CoolPhysics2DDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A90BA5401A28B7BF00078424;
+			productRefGroup = A90BA54A1A28B7BF00078424 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A90BA5481A28B7BF00078424 /* CoolPhysics2DDemo */,
+				A90BA5611A28B7BF00078424 /* CoolPhysics2DDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A90BA5471A28B7BF00078424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90BA5581A28B7BF00078424 /* Main.storyboard in Resources */,
+				A90BA55D1A28B7BF00078424 /* LaunchScreen.xib in Resources */,
+				A90BA55A1A28B7BF00078424 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90BA5601A28B7BF00078424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90BA5451A28B7BF00078424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A980C31A1A2C63A500FA62E0 /* BouncingBallView.mm in Sources */,
+				A980C3081A2C608300FA62E0 /* Particle.cpp in Sources */,
+				A980C3021A2C608300FA62E0 /* Color.cpp in Sources */,
+				A980C3041A2C608300FA62E0 /* Field.cpp in Sources */,
+				A980C3311A2C67E200FA62E0 /* FireView.mm in Sources */,
+				A980C3381A2C6BF900FA62E0 /* CP2DGameViewController.mm in Sources */,
+				A980C3051A2C608300FA62E0 /* GameWorld.cpp in Sources */,
+				A980C3071A2C608300FA62E0 /* ObstacleField.cpp in Sources */,
+				A980C2FF1A2C608300FA62E0 /* BuoyancyField.cpp in Sources */,
+				A980C32B1A2C67B900FA62E0 /* CP2DGameView.mm in Sources */,
+				A980C3091A2C608300FA62E0 /* ParticleEmitter.cpp in Sources */,
+				A980C30D1A2C608300FA62E0 /* CP2DParticleRenderer.mm in Sources */,
+				A980C3011A2C608300FA62E0 /* Circle.cpp in Sources */,
+				A980C30A1A2C608300FA62E0 /* Rectangle.cpp in Sources */,
+				A980C3001A2C608300FA62E0 /* CentripetalGravityField.cpp in Sources */,
+				A980C3061A2C608300FA62E0 /* GravityField.cpp in Sources */,
+				A90BA5551A28B7BF00078424 /* ViewController.mm in Sources */,
+				A980C3031A2C608300FA62E0 /* DampingField.cpp in Sources */,
+				A980C3321A2C67E200FA62E0 /* FireViewController.mm in Sources */,
+				A980C30C1A2C608300FA62E0 /* CP2DGameWorldRenderer.mm in Sources */,
+				A980C3191A2C63A500FA62E0 /* BouncingBallViewController.mm in Sources */,
+				A90BA5521A28B7BF00078424 /* AppDelegate.mm in Sources */,
+				A980C30B1A2C608300FA62E0 /* Vector.cpp in Sources */,
+				A90BA54F1A28B7BF00078424 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90BA55E1A28B7BF00078424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90BA5691A28B7BF00078424 /* CoolPhysics2DDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A90BA5641A28B7BF00078424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90BA5481A28B7BF00078424 /* CoolPhysics2DDemo */;
+			targetProxy = A90BA5631A28B7BF00078424 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A90BA5561A28B7BF00078424 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90BA5571A28B7BF00078424 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A90BA55B1A28B7BF00078424 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90BA55C1A28B7BF00078424 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A90BA56A1A28B7BF00078424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A90BA56B1A28B7BF00078424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90BA56D1A28B7BF00078424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoolPhysics2DDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A90BA56E1A28B7BF00078424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoolPhysics2DDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A90BA5701A28B7BF00078424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoolPhysics2DDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoolPhysics2DDemo.app/CoolPhysics2DDemo";
+			};
+			name = Debug;
+		};
+		A90BA5711A28B7BF00078424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoolPhysics2DDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoolPhysics2DDemo.app/CoolPhysics2DDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90BA5441A28B7BF00078424 /* Build configuration list for PBXProject "CoolPhysics2DDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90BA56A1A28B7BF00078424 /* Debug */,
+				A90BA56B1A28B7BF00078424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90BA56C1A28B7BF00078424 /* Build configuration list for PBXNativeTarget "CoolPhysics2DDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90BA56D1A28B7BF00078424 /* Debug */,
+				A90BA56E1A28B7BF00078424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90BA56F1A28B7BF00078424 /* Build configuration list for PBXNativeTarget "CoolPhysics2DDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90BA5701A28B7BF00078424 /* Debug */,
+				A90BA5711A28B7BF00078424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90BA5411A28B7BF00078424 /* Project object */;
+}

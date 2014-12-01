@@ -1,19 +1,19 @@
 //
-//  BouncingBallTests.m
-//  BouncingBallTests
+//  CoolPhysics2DDemoTests.m
+//  CoolPhysics2DDemoTests
 //
-//  Created by JIRENTIANXIANG on 11/21/14.
+//  Created by JIRENTIANXIANG on 11/28/14.
 //  Copyright (c) 2014 JIRENTIANXIANG. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface BouncingBallTests : XCTestCase
+@interface CoolPhysics2DDemoTests : XCTestCase
 
 @end
 
-@implementation BouncingBallTests
+@implementation CoolPhysics2DDemoTests
 
 - (void)setUp {
     [super setUp];

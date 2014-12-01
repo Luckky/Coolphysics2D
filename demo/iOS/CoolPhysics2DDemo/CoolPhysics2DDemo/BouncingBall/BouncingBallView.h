@@ -9,11 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Particle.h"
 #import "GameWorld.h"
+#import "CP2DGameWorldRenderer.h"
+#import "CP2DGameView.h"
 
-using namespace CoolPhysics2D;
-
-@interface GameView : UIView
-
-@property GameWorld* gameWorld;
+@interface BouncingBallView : CP2DGameView;
 
 @end

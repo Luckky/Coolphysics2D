@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A982DEC51A1F93310095341A"
-               BuildableName = "BouncingBall.app"
-               BlueprintName = "BouncingBall"
-               ReferencedContainer = "container:BouncingBall.xcodeproj">
+               BlueprintIdentifier = "A90BA5481A28B7BF00078424"
+               BuildableName = "CoolPhysics2DDemo.app"
+               BlueprintName = "CoolPhysics2DDemo"
+               ReferencedContainer = "container:CoolPhysics2DDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A982DEDE1A1F93310095341A"
-               BuildableName = "BouncingBallTests.xctest"
-               BlueprintName = "BouncingBallTests"
-               ReferencedContainer = "container:BouncingBall.xcodeproj">
+               BlueprintIdentifier = "A90BA5611A28B7BF00078424"
+               BuildableName = "CoolPhysics2DDemoTests.xctest"
+               BlueprintName = "CoolPhysics2DDemoTests"
+               ReferencedContainer = "container:CoolPhysics2DDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A982DEDE1A1F93310095341A"
-               BuildableName = "BouncingBallTests.xctest"
-               BlueprintName = "BouncingBallTests"
-               ReferencedContainer = "container:BouncingBall.xcodeproj">
+               BlueprintIdentifier = "A90BA5611A28B7BF00078424"
+               BuildableName = "CoolPhysics2DDemoTests.xctest"
+               BlueprintName = "CoolPhysics2DDemoTests"
+               ReferencedContainer = "container:CoolPhysics2DDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A982DEC51A1F93310095341A"
-            BuildableName = "BouncingBall.app"
-            BlueprintName = "BouncingBall"
-            ReferencedContainer = "container:BouncingBall.xcodeproj">
+            BlueprintIdentifier = "A90BA5481A28B7BF00078424"
+            BuildableName = "CoolPhysics2DDemo.app"
+            BlueprintName = "CoolPhysics2DDemo"
+            ReferencedContainer = "container:CoolPhysics2DDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A982DEC51A1F93310095341A"
-            BuildableName = "BouncingBall.app"
-            BlueprintName = "BouncingBall"
-            ReferencedContainer = "container:BouncingBall.xcodeproj">
+            BlueprintIdentifier = "A90BA5481A28B7BF00078424"
+            BuildableName = "CoolPhysics2DDemo.app"
+            BlueprintName = "CoolPhysics2DDemo"
+            ReferencedContainer = "container:CoolPhysics2DDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A982DEC51A1F93310095341A"
-            BuildableName = "BouncingBall.app"
-            BlueprintName = "BouncingBall"
-            ReferencedContainer = "container:BouncingBall.xcodeproj">
+            BlueprintIdentifier = "A90BA5481A28B7BF00078424"
+            BuildableName = "CoolPhysics2DDemo.app"
+            BlueprintName = "CoolPhysics2DDemo"
+            ReferencedContainer = "container:CoolPhysics2DDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
