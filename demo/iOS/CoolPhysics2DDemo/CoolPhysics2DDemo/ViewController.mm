@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BouncingBallViewController.h"
+#import "FireViewController.h"
 
 @interface ViewController ()
 
@@ -32,7 +33,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 2;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -45,6 +46,9 @@
     switch (indexPath.row) {
         case 0:
             cell.textLabel.text=@"Bouncing Balls";
+            break;
+        case 1:
+            cell.textLabel.text=@"Fire";
             break;
             
         default:
@@ -61,6 +65,11 @@
             BouncingBallViewController* viewController=[[BouncingBallViewController alloc] init];
             [self.navigationController pushViewController:viewController animated:YES];
             break;
+        }
+        case 1:
+        {
+            FireViewController* viewController=[[FireViewController alloc] init];
+            [self.navigationController pushViewController:viewController animated:YES];
         }
             
         default:

@@ -1,5 +1,6 @@
 #include "GameWorld.h"
 #include "Particle.h"
+#include "ParticleEmitter.h"
 
 BEGIN_NAMESPACE_COOLPHYSICS2D
 
@@ -41,9 +42,16 @@ void GameWorld::addField(Field *field)
 {
     _fields.push_back(field);
 }
+void GameWorld::addParticleEmitter(CoolPhysics2D::ParticleEmitter *emitter)
+{
+    _particleEmitters.push_back(emitter);
+}
 
 void GameWorld::update(double timeInterval)
 {
+    for (int i=0; i<_particleEmitters.size(); i++) {
+        _particleEmitters[i]->emit(timeInterval);
+    }
     for (int i=0; i<_particles.size(); i++) {
         Particle* pi=_particles[i];
         if (pi->lifeTime()<0) {
@@ -54,7 +62,7 @@ void GameWorld::update(double timeInterval)
         pi->update(timeInterval);
         for (int j=i+1; j<_particles.size(); j++) {
             Particle* pj=_particles[j];
-            if (_particles[i]->collideWith(*_particles[j])) {
+            if (Particle::collide(*_particles[i],*_particles[j])) {
                 Particle::handleCollision(*pi,*pj);
             }
         }

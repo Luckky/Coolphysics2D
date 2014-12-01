@@ -5,6 +5,7 @@
 #include "DampingField.h"
 #include "GravityField.h"
 #include "BuoyancyField.h"
+#include "ParticleEmitter.h"
 
 @implementation CP2DGameView
 
@@ -21,7 +22,8 @@
 -(void)drawRect:(CGRect)rect
 {
     CGContextRef ctx=UIGraphicsGetCurrentContext();
-    
+    CGContextClearRect(ctx, self.frame);
+    _gameWorldRenderer=[[CP2DGameWorldRenderer alloc] initWithGameWorld:self.gameWorld];
     [_gameWorldRenderer renderInContext:ctx];
 }
 

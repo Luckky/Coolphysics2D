@@ -3,7 +3,7 @@
 
 BEGIN_NAMESPACE_COOLPHYSICS2D
 
-Particle::Particle(double radius,double mass,double elasticity,Vector position,Vector velocity,Vector acceleration,double lifeTime,Color color):_radius(radius),_mass(mass),_position(position),_velocity(velocity),_acceleration(acceleration),_elasticity(elasticity),_lifeTime(lifeTime),_color(color){}
+Particle::Particle(bool overlappable,double radius,double mass,double elasticity,Vector position,Vector velocity,Vector acceleration,double lifeTime,Color color):_overlappable(overlappable),_radius(radius),_mass(mass),_position(position),_velocity(velocity),_acceleration(acceleration),_elasticity(elasticity),_lifeTime(lifeTime),_color(color){}
 
 void Particle::update(double timeInterval)
 {
@@ -20,10 +20,12 @@ void Particle::update(double timeInterval)
 
 void Particle::reflectAbout(const Vector& axis)
 {
-    _velocity.symmetrizeAbout(axis);
-    Vector n=axis.rotate(M_PI/2);
-    double nComp=_velocity.componentAlongAxis(n);
-    _velocity+=n*nComp*(_elasticity*_elasticity-1);
+    if (!_overlappable) {
+        _velocity.symmetrizeAbout(axis);
+        Vector n=axis.rotate(M_PI/2);
+        double nComp=_velocity.componentAlongAxis(n);
+        _velocity+=n*nComp*(_elasticity*_elasticity-1);
+    }
 }
 
 double Particle::distanceTo(const Particle &e)const
@@ -34,13 +36,16 @@ double Particle::distanceTo(const Particle &e)const
     return v.modulus();
 }
 
-bool Particle::collideWith(const Particle& e)const
+bool Particle::collide(const Particle& p1,const Particle& p2)
 {
-    double distance=this->distanceTo(e);
-    if (distance<this->_radius+e._radius) {
-        Vector collisionAxis=e.position()-this->position();
-        double v1=this->velocity().componentAlongAxis(collisionAxis);
-        double v2=e.velocity().componentAlongAxis(collisionAxis);
+    if (p1._overlappable||p2._overlappable) {
+        return false;
+    }
+    double distance=p1.distanceTo(p2);
+    if (distance<p1._radius+p2._radius) {
+        Vector collisionAxis=p2.position()-p1.position();
+        double v1=p1.velocity().componentAlongAxis(collisionAxis);
+        double v2=p2.velocity().componentAlongAxis(collisionAxis);
         if ((v1-v2)>0) {
             return true;
         }

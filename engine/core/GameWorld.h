@@ -30,6 +30,7 @@ public:
 	void addParticle(Particle* particle);
     void removeParticle(Particle* particle);
     void addField(Field* field);
+    void addParticleEmitter(ParticleEmitter* emitter);
 
 	void update(double timeInterval);
 
@@ -37,6 +38,7 @@ private:
 	void bounce(Particle* Particle)const;
 	Rectangle _range;
 	std::vector<Particle*> _particles;
+    std::vector<ParticleEmitter*> _particleEmitters;
     std::vector<Field*> _fields;
 };
 

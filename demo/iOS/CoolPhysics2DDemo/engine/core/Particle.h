@@ -26,7 +26,7 @@ class Particle
 public:
     
     
-    Particle(double radius,double mass,double elasticity,Vector position,Vector velocity,Vector acceleration,double lifeTime=MAX_LIFETIME,Color color=Color::whiteColor);
+    Particle(bool overlappable,double radius,double mass,double elasticity,Vector position,Vector velocity,Vector acceleration,double lifeTime=MAX_LIFETIME,Color color=Color::whiteColor);
 
 	std::string description()const;
 
@@ -35,8 +35,8 @@ public:
 	void reflectAbout(const Vector& axis); //behavior when collides with the edge of the game world
     
     //Relation
-    double distanceTo(const Particle& e)const;
-    bool collideWith(const Particle&)const;
+    double distanceTo(const Particle& p)const;
+    static bool collide(const Particle&,const Particle&);
     
     //Action
     static void handleCollision(Particle& e1,Particle& e2);
@@ -55,6 +55,7 @@ protected:
     
 
 private:
+    bool _overlappable;
     double _lifeTime;
     
     double _radius;

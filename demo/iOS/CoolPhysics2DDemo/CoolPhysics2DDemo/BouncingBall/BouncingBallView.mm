@@ -30,15 +30,13 @@
         Field* buoyancyField=new BuoyancyField(water,*gravityField,0.0002);
         self.gameWorld->addField(buoyancyField);
         
-        Particle* _particle0=new Particle(50,1,0.95,Vector(0,0),Vector(500,0),Vector(0,0),10000,Color::blueColor);
-        Particle* _particle1=new Particle(30,0.5,0.99,Vector(300,100),Vector(-400,0),Vector(0,0),10000,Color::redColor);
-        Particle* _particle2=new Particle(40,0.8,0.98,Vector(200,300),Vector(500,0),Vector(0,0),10000,Color::greenColor);
+        Particle* _particle0=new Particle(false,50,1,0.95,Vector(0,0),Vector(500,0),Vector(0,0),10000,Color::blueColor);
+        Particle* _particle1=new Particle(false,30,0.5,0.99,Vector(300,100),Vector(-400,0),Vector(0,0),10000,Color::redColor);
+        Particle* _particle2=new Particle(false,40,0.8,0.98,Vector(200,300),Vector(500,0),Vector(0,0),10000,Color::greenColor);
         
         self.gameWorld->addParticle(_particle0);
         self.gameWorld->addParticle(_particle1);
         self.gameWorld->addParticle(_particle2);
-        
-        _gameWorldRenderer=[[CP2DGameWorldRenderer alloc] initWithGameWorld:self.gameWorld];
         
         
     }
@@ -54,7 +52,8 @@
     [square fill];
     [square stroke];
     
-    [super drawRect:rect];
+    _gameWorldRenderer=[[CP2DGameWorldRenderer alloc] initWithGameWorld:self.gameWorld];
+    [_gameWorldRenderer renderInContext:ctx];
 }
 
 @end

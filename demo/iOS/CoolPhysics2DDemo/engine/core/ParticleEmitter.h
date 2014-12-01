@@ -3,6 +3,7 @@
 
 #include "config.h"
 #include "Vector.h"
+#include "Color.h"
 
 BEGIN_NAMESPACE_COOLPHYSICS2D
 
@@ -12,7 +13,7 @@ class ParticleEmitter
 {
 public:
     //Constructor
-    ParticleEmitter(GameWorld& gameWorld,const Vector& position,double frequency,double minRadius,double maxRadius,double minMass,double maxMass,double minElasticity,double maxElasticity,double minSpeed,double maxSpeed,double minRadian,double maxRadian);
+    ParticleEmitter(GameWorld& gameWorld,const Vector& position,double frequency,double minLifeTime,double maxLifeTime,const Color& minColor,const Color& maxColor,double minRadius,double maxRadius,double minDensity,double maxDensity,double minElasticity,double maxElasticity,double minSpeed,double maxSpeed,double minRadian,double maxRadian);
     
     //Destructor
     ~ParticleEmitter();
@@ -24,12 +25,17 @@ private:
     Vector _position;
     double _frequency;
     
+    //Particle property
     double _minLifeTime;
     double _maxLifeTime;
+    double _minRed;
+    double _maxRed;
+    Color _minColor;
+    Color _maxColor;
     double _minRadius;
     double _maxRadius;
-    double _minMass;
-    double _maxMass;
+    double _minDensity;
+    double _maxDensity;
     double _minElasticity;
     double _maxElasticity;
     double _minSpeed;
@@ -37,9 +43,8 @@ private:
     double _minRadian;
     double _maxRadian;
     
-    
     double _time;
-    int _particleCount;
+    double _particleCount;
 };
 
 END_NAMESPACE_COOLPHYSICS2D
