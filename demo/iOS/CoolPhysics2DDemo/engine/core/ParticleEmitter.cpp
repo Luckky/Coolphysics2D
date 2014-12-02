@@ -8,9 +8,25 @@
 
 BEGIN_NAMESPACE_COOLPHYSICS2D
 
-ParticleEmitter::ParticleEmitter(GameWorld& gameWorld,const Vector& position,double frequency,double minLifeTime,double maxLifeTime,const Color& minColor,const Color& maxColor,double minRadius,double maxRadius,double minDensity,double maxDensity,double minElasticity,double maxElasticity,double minSpeed,double maxSpeed,double minRadian,double maxRadian):_gameWorld(gameWorld),_position(position),_frequency(frequency),_minColor(minColor),_maxColor(maxColor),_minLifeTime(minLifeTime),_maxLifeTime(maxLifeTime),_minRadius(minRadius),_maxRadius(maxRadius),_minDensity(minDensity),_maxDensity(maxDensity),_minElasticity(minElasticity),_maxElasticity(maxElasticity),_minSpeed(minSpeed),_maxSpeed(maxSpeed),_minRadian(minSpeed),_maxRadian(maxSpeed),_time(0),_particleCount(0){}
+ParticleEmitter::ParticleEmitter(GameWorld& gameWorld,const Vector& position,double frequency,double minLifeTime,double maxLifeTime,const Color& minColor,const Color& maxColor,double minRadius,double maxRadius,double minDensity,double maxDensity,double minElasticity,double maxElasticity,double minSpeed,double maxSpeed,double minRadian,double maxRadian):_gameWorld(gameWorld),_position(position),_frequency(frequency),_minColor(minColor),_maxColor(maxColor),_minLifeTime(minLifeTime),_maxLifeTime(maxLifeTime),_minRadius(minRadius),_maxRadius(maxRadius),_minDensity(minDensity),_maxDensity(maxDensity),_minElasticity(minElasticity),_maxElasticity(maxElasticity),_minSpeed(minSpeed),_maxSpeed(maxSpeed),_minRadian(minSpeed),_maxRadian(maxSpeed),_time(0),_particleCount(0)
+{
+    disable();
+}
 
 ParticleEmitter::~ParticleEmitter(){}
+
+void ParticleEmitter::enable()
+{
+    _enabled=true;
+}
+void ParticleEmitter::disable()
+{
+    _enabled=false;
+}
+bool ParticleEmitter::enabled()const
+{
+    return _enabled;
+}
 
 void ParticleEmitter::emit(double interval)
 {
@@ -26,6 +42,7 @@ void ParticleEmitter::emit(double interval)
         double speed=RAND(_minSpeed, _maxSpeed);
         double radian=RAND(_minRadian, _maxRadian);
         double lifeTime=RAND(_minLifeTime, _maxLifeTime);
+ 
         double red=RAND(_minColor.RED, _maxColor.RED);
         double green=RAND(_minColor.GREEN, _maxColor.GREEN);
         double blue=RAND(_minColor.BLUE, _maxColor.BLUE);

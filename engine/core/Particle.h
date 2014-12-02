@@ -45,7 +45,9 @@ public:
     double lifeTime()const;
     double radius()const;
 	const Vector& position()const;
+    void setPosition(const Vector&);
 	const Vector& velocity()const;
+    void setVelocity(const Vector&);
 	const Vector& acceleration()const;
     const Color& color()const;
     

@@ -30,7 +30,9 @@ public:
 	void addParticle(Particle* particle);
     void removeParticle(Particle* particle);
     void addField(Field* field);
+    void removeField(Field* field);
     void addParticleEmitter(ParticleEmitter* emitter);
+    void removeParticleEmitter(ParticleEmitter* emitter);
 
 	void update(double timeInterval);
 

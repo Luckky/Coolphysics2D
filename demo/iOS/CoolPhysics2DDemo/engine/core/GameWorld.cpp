@@ -42,15 +42,37 @@ void GameWorld::addField(Field *field)
 {
     _fields.push_back(field);
 }
+void GameWorld::removeField(CoolPhysics2D::Field *field)
+{
+    for (std::vector<Field*>::iterator it=_fields.begin(); it!=_fields.end(); it++) {
+        if (*it==field) {
+            _fields.erase(it);
+            break;
+        }
+    }
+}
+void GameWorld::removeParticleEmitter(CoolPhysics2D::ParticleEmitter *emitter)
+{
+    for (std::vector<ParticleEmitter*>::iterator it=_particleEmitters.begin(); it!=_particleEmitters.end(); it++) {
+        if (*it==emitter) {
+            _particleEmitters.erase(it);
+            break;
+        }
+    }
+}
 void GameWorld::addParticleEmitter(CoolPhysics2D::ParticleEmitter *emitter)
 {
     _particleEmitters.push_back(emitter);
 }
 
+
 void GameWorld::update(double timeInterval)
 {
     for (int i=0; i<_particleEmitters.size(); i++) {
-        _particleEmitters[i]->emit(timeInterval);
+        ParticleEmitter* pe=_particleEmitters[i];
+        if (pe->enabled()) {
+            pe->emit(timeInterval);
+        }
     }
     for (int i=0; i<_particles.size(); i++) {
         Particle* pi=_particles[i];
@@ -68,7 +90,10 @@ void GameWorld::update(double timeInterval)
         }
         
         for (int j=0; j<_fields.size(); j++) {
-            _fields[j]->actOn(*_particles[i]);
+            Field* f=_fields[j];
+            if (f->enabled()) {
+                f->actOn(*_particles[i]);
+            }
         }
     }
 }

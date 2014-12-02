@@ -13,8 +13,12 @@ public:
     Field(const Rectangle& range);
     virtual ~Field();
     virtual void actOn(Particle& particle)const=0;
+    void enable();
+    void disable();
+    bool enabled()const;
 protected:
-     Rectangle _range;
+    Rectangle _range;
+    bool _enabled;
 };
 
 END_NAMESPACE_COOLPHYSICS2D

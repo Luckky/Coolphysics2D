@@ -95,9 +95,17 @@ const Vector& Particle::position()const
 {
 	return _position;
 }
+void Particle::setPosition(const Vector &position)
+{
+    _position=position;
+}
 const Vector& Particle::velocity()const
 {
 	return _velocity;
+}
+void Particle::setVelocity(const Vector &velocity)
+{
+    _velocity=velocity;
 }
 const Vector& Particle::acceleration()const
 {

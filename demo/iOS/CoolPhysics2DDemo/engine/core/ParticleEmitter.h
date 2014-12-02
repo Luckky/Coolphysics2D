@@ -20,7 +20,12 @@ public:
     
     //Behavior
     void emit(double interval);
+    void enable();
+    void disable();
+    bool enabled()const;
 private:
+    bool _enabled;
+    
     GameWorld& _gameWorld;
     Vector _position;
     double _frequency;

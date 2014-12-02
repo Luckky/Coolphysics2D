@@ -32,6 +32,7 @@ using namespace CoolPhysics2D;
             50,100,           //min & max speed
             0,2*M_PI                //min & max radian
         );
+        particleEmitter->enable();
         self.gameWorld->addParticleEmitter(particleEmitter);
         Rectangle range(0,0,self.frame.size.width,self.frame.size.height);
         GravityField* gravityField=new GravityField(range,Vector(0,100));
